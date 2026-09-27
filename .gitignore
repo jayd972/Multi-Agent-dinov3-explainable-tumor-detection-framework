@@ -1,0 +1,86 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# AI editor tool configs (local only)
+.claude/
+.opencode/
+
+# API Keys and Secrets
+config/api_config.json
+*.env
+.env.local
+secrets.json
+
+# Large model weights (exceed GitHub 100MB limit)
+*.pth
+*.pt
+*.bin
+*.ckpt
+*.safetensors
+
+# Large binary data files
+*.npz
+*.npy
+*.pkl
+*.pickle
+
+# Scratch / local dev scripts
+scratch/
+
+# Test cache
+.pytest_cache/
+
+# Artifacts and generated outputs
+artifacts/
+results_augmented_dinov3/
+
+# Large root-level output files
+*.png
+*.pdf
+*.docx
+Rebuttle.docx
+output.txt
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Logs
+*.log
+output.txt

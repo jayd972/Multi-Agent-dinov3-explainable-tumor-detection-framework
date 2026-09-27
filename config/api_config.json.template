@@ -1,0 +1,42 @@
+{
+  "servers": {
+    "modeler": {
+      "base_url": "http://127.0.0.1:8001",
+      "description": "Feature extraction, training and evaluation server"
+    },
+    "explainer": {
+      "base_url": "http://127.0.0.1:8002",
+      "description": "XAI visualizations server"
+    },
+    "reporter": {
+      "base_url": "http://127.0.0.1:8003",
+      "description": "LLM-based report generator"
+    }
+  },
+  "timeout": {
+    "modeler": 600,
+    "explainer": 600,
+    "reporter": 120
+  },
+  "paths": {
+    "feats": "artifacts/feats",
+    "models": "artifacts/models",
+    "metrics": "artifacts/metrics",
+    "explain": "artifacts/explain",
+    "reports": "artifacts/explain/reports"
+  },
+  "api_keys": {
+    "openai": {
+      "key": "YOUR_OPENAI_API_KEY_HERE",
+      "model": "gpt-4o-mini",
+      "note": "Used by reporter_server.py for explanation generation. Set OPENAI_API_KEY environment variable instead."
+    },
+    "huggingface": {
+      "token": "YOUR_HUGGINGFACE_TOKEN_HERE",
+      "default_model": "facebook/dinov3-base",
+      "note": "Used by modeler_server.py and explainer_server.py. Set HUGGINGFACE_HUB_TOKEN environment variable instead."
+    }
+  }
+}
+
+
