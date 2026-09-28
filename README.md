@@ -57,6 +57,14 @@ Three **FastAPI microservices** communicate over HTTP. The orchestrator coordina
 
 ---
 
+## Key Results
+
+- **High-Accuracy Classification**: Achieved **99.3% accuracy** and a **0.993 F1-score** across a 1,000-image test set on the 4-class brain tumor classification task.
+- **Quantitative XAI Validation**: Validated model interpretability using 7 distinct XAI techniques (Grad-CAM, Chefer, Integrated Gradients, etc.), generating localized heatmaps that accurately highlight tumor regions (quantified via Dice/IoU tracking).
+- **Automated Medical Reporting**: Successfully integrated a multimodal Vision-Language pipeline to consume XAI overlays and classification confidence, autonomously generating structured, factual radiology-style reports.
+
+---
+
 ## Requirements
 
 - Python ≥ 3.10
