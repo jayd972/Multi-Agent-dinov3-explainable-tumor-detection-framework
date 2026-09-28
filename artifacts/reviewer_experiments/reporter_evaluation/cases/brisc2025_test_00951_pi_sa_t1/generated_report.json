@@ -1,0 +1,8 @@
+{
+  "model_prediction": "pituitary_tumor",
+  "prediction_confidence": 0.9999998807907104,
+  "explanation_summary": "The model predicts a pituitary tumor with high confidence. The attention rollout method indicates areas of focus, but it is not class-specific and does not provide proof of causality. Gradient saliency is also included for further analysis.",
+  "agreement_between_xai_methods": "MASK_UNAVAILABLE",
+  "important_limitations": "The quantitative localization metrics were not computed, and the attention rollout method is not class-specific.",
+  "research_use_warning": "This is a model explanation summary, not a clinical report."
+}

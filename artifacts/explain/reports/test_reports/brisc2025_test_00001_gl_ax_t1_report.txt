@@ -1,0 +1,25 @@
+Below is a plain‑language, visualization‑by‑visualization read of what the model appears to be "looking at." I am describing the *model's* reasoning, not confirming a diagnosis.
+
+**Overall picture**
+The model predicts **glioma_tumor** with high confidence (0.950), and the other three options (meningioma, pituitary, no_tumor) are all near zero. The bar chart makes this clear: one tall bar for glioma, the rest essentially flat. So the model is not torn between classes—it is strongly committed to one answer.
+
+**Attention rollout (smooth heatmap)**
+The brightest, warmest color (red/orange) sits over the irregular mass in the back part of the brain slice, with a hot core right on the lesion. There are a few smaller warm spots elsewhere (front of the brain and along the edges), but the dominant focus is the mass. *What this suggests:* the model's "gaze" is centered on the abnormal region, which is the behavior we would hope to see if it is using the lesion to decide.
+
+**Gradient saliency (noisier, speckled map)**
+This map is grainier, but its red core also lands on the same posterior mass. There is extra speckle and some vertical streaks outside the head (background noise). *What this suggests:* a second, independent method also points to the mass, but it is reacting to finer, higher‑frequency texture details and picking up some irrelevant background. The fact that it agrees with the attention map on *where* the mass is is reassuring.
+
+**DeepDream (colorful, garbled image)**
+This one is very noisy and hard to read; it does not give a clean, single hotspot on the mass. *What this suggests:* this technique is amplifying texture patterns broadly rather than isolating the lesion, so it is the least informative of the set here. I would not lean on it for interpretation.
+
+**Occlusion map (blocky map)**
+A small blocky region over the same posterior mass lights up (green with a tiny red center). *What this suggests:* when that specific patch is hidden, the model's answer changes the most—so the model treats that patch as causally important. The blockiness is just an artifact of the patch size used.
+
+**Putting it together**
+Three of the four maps (attention, gradient, occlusion) converge on the same visible mass in the back of the slice, and the probability chart shows strong, unambiguous confidence. That convergence is a *good sign* that the model is keying on a real‑looking abnormality rather than random noise. However, a few cautions:
+
+- These maps explain the *model*, not the ground truth. A model can be confident and still wrong, and explanation maps can sometimes highlight artifacts, slice orientation, or non‑causal texture.
+- The DeepDream view is too noisy to add confidence.
+- High probability (0.950) reflects the model's internal certainty, not a verified diagnosis; the true label is not shown here.
+
+**Caution:** This is a research/interpretation explanation of how a machine‑learning model behaves on one image. It is **not** a clinical diagnosis and must not be used to make medical decisions. Any real case should be reviewed by a qualified radiologist/clinician with the full imaging series and clinical context.

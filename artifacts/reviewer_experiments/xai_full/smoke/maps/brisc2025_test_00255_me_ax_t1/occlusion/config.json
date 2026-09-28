@@ -1,0 +1,34 @@
+{
+  "method": "occlusion",
+  "algorithm": "sliding-window class-probability occlusion",
+  "target_class": 1,
+  "predicted_class": 1,
+  "class_probabilities": [
+    0.0014106578892096877,
+    0.9985668063163757,
+    2.1862837456865236e-05,
+    7.012305331954849e-07
+  ],
+  "input_hw": [
+    224,
+    224
+  ],
+  "attribution_hw": [
+    224,
+    224
+  ],
+  "config": {
+    "method": "occlusion",
+    "algorithm": "sliding-window class-probability occlusion",
+    "patch_size": 32,
+    "stride": 32,
+    "batch_size": 8,
+    "baseline": "zero",
+    "mask_shape": "square",
+    "value_meaning": "baseline_P(target) - occluded_P(target); positive = supportive region",
+    "checkpoint": "C:\\Users\\darji\\OneDrive\\Desktop\\Multi-Agent-dinov3-explainable-tumor-detection-framework-main\\artifacts\\models\\clf.pth"
+  },
+  "runtime_s": 0.6300327777862549,
+  "warning": null,
+  "extras": {}
+}

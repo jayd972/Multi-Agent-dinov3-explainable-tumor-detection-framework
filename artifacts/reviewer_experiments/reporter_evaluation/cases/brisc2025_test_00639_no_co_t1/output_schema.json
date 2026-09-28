@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "required": [
+    "model_prediction",
+    "prediction_confidence",
+    "explanation_summary",
+    "agreement_between_xai_methods",
+    "important_limitations",
+    "research_use_warning"
+  ],
+  "properties": {
+    "model_prediction": {
+      "type": "string"
+    },
+    "prediction_confidence": {
+      "type": "string"
+    },
+    "explanation_summary": {
+      "type": "string"
+    },
+    "agreement_between_xai_methods": {
+      "type": "string"
+    },
+    "important_limitations": {
+      "type": "string"
+    },
+    "research_use_warning": {
+      "type": "string"
+    }
+  }
+}

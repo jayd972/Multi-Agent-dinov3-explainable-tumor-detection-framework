@@ -1,0 +1,35 @@
+{
+  "method": "integrated_gradients",
+  "algorithm": "Integrated Gradients (Sundararajan et al.)",
+  "target_class": 2,
+  "predicted_class": 2,
+  "class_probabilities": [
+    2.272673100378597e-06,
+    0.0003062266914639622,
+    0.9991293549537659,
+    0.0005622031749226153
+  ],
+  "input_hw": [
+    224,
+    224
+  ],
+  "attribution_hw": [
+    224,
+    224
+  ],
+  "config": {
+    "method": "integrated_gradients",
+    "algorithm": "Integrated Gradients (Sundararajan et al.)",
+    "baseline": "zero",
+    "steps": 32,
+    "convergence_delta": 0.3697366714477539,
+    "combination": "positive-only sum over channels",
+    "checkpoint": "C:\\Users\\darji\\OneDrive\\Desktop\\Multi-Agent-dinov3-explainable-tumor-detection-framework-main\\artifacts\\models\\clf.pth"
+  },
+  "runtime_s": 4.961103200912476,
+  "warning": "Combined map is the sum of positive channel attributions. Negative evidence is saved separately in negative_map and was not folded into abs().",
+  "extras": {
+    "convergence_delta": 0.3697366714477539,
+    "steps": 32
+  }
+}

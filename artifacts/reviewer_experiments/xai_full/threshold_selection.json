@@ -1,0 +1,19 @@
+{
+  "candidates": [
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7
+  ],
+  "mean_dice_by_threshold": {
+    "0.3": 0.049623264414179746,
+    "0.4": 0.04958520692546653,
+    "0.5": 0.04728815402593215,
+    "0.6": 0.0408193453986502,
+    "0.7": 0.03087326495131255
+  },
+  "selected_threshold": 0.3,
+  "n_val_images_with_masks": 24,
+  "note": "Threshold frozen before any official test evaluation."
+}

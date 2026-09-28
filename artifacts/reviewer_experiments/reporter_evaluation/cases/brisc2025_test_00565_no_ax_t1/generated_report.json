@@ -1,0 +1,8 @@
+{
+  "model_prediction": "no_tumor",
+  "prediction_confidence": 0.9999955892562866,
+  "explanation_summary": "The model predicts 'no_tumor' with high confidence. The attention rollout method is not class-specific and does not provide proof of causality. Gradient saliency was also utilized for interpretation.",
+  "agreement_between_xai_methods": "The methods used (attention_rollout and gradient_saliency) provide complementary insights, but their agreement was not quantitatively assessed.",
+  "important_limitations": "Quantitative localization metrics were not computed, and the attention rollout method is not class-specific.",
+  "research_use_warning": "This is a model explanation summary and not a clinical report."
+}

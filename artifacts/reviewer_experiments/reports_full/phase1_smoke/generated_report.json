@@ -1,0 +1,8 @@
+{
+  "model_prediction": "glioma_tumor",
+  "prediction_confidence": "1.00",
+  "explanation_summary": "The model predicted glioma_tumor with a probability of 1.00 (class probabilities: glioma_tumor: 1.0, meningioma_tumor: 2.96e-08, pituitary_tumor: 6.66e-09, no_tumor: 7.59e-11). Explainability methods evaluated include gradcam, chefer_attribution, integrated_gradients, and occlusion. Neither the original MRI image nor the XAI heatmap images were provided for visual inspection.",
+  "agreement_between_xai_methods": "Quantitative localization metrics (Dice and IoU) were not computed because ground truth masks were marked as MASK_UNAVAILABLE.",
+  "important_limitations": "Quantitative localization metrics (Dice and IoU) were not computed. No original MRI or visual XAI heatmap images were included in this evaluation. Note that attention rollout is not class-specific and is not proof of causality.",
+  "research_use_warning": "This output is a model explanation summary for research purposes only and is not a clinical radiology report or medical diagnosis."
+}

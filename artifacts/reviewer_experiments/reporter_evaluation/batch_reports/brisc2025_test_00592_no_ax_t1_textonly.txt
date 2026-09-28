@@ -1,0 +1,12 @@
+In this analysis, the model has predicted that there is "no tumor" present in the image, with a very high confidence level of 100% (probability of 1.000). This means that the model is very certain about its prediction.
+
+The top scores indicate the probabilities for different classes of tumors:
+
+- **No Tumor**: 1.000 (100% confidence)
+- **Glioma Tumor**: 0.000 (0% confidence)
+- **Meningioma Tumor**: 0.000 (0% confidence)
+- **Pituitary Tumor**: 0.000 (0% confidence)
+
+The visualization suggests that the model has analyzed the features of the image and found no indicators of any type of tumor. The scores for glioma, meningioma, and pituitary tumors are all at 0%, which reinforces the model's conclusion that there is no tumor present.
+
+It's important to note that this explanation is for research purposes only and should not be used as a clinical diagnosis. Always consult a medical professional for accurate diagnosis and treatment.

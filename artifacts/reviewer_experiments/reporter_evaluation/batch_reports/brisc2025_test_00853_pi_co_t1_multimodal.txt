@@ -1,0 +1,20 @@
+Based on the analysis of the tumor images, here’s a plain language explanation of what the visualizations suggest about the model's reasoning:
+
+### Predicted Class
+- **Pituitary Tumor**: The model predicts a pituitary tumor with a very high probability of 99.9%. This indicates strong confidence in the diagnosis.
+
+### Top Scores
+- The model scores indicate that it sees the presence of a pituitary tumor as overwhelmingly more likely than other types of tumors (glioma, meningioma) or the absence of a tumor. The scores for glioma, meningioma, and no tumor are all at 0.0%, reinforcing the focus on the pituitary tumor.
+
+### Attention Rollout Heatmap
+- **Heatmap Overview**: This visualization highlights areas of the image that the model considers important for its prediction.
+- **Key Observations**: The bright areas, particularly in the center of the image, suggest that the model is focusing on a specific region where the pituitary tumor is likely located. The heatmap shows high attention in that area, indicating it played a crucial role in the model's decision.
+
+### Gradient Saliency Heatmap
+- **Heatmap Overview**: This visualization shows which parts of the image contributed most to the model's prediction.
+- **Key Observations**: The areas marked in red indicate regions that had a significant impact on the model's reasoning. While the overall pattern is more dispersed compared to the attention heatmap, the red areas still suggest that the model is identifying features consistent with a pituitary tumor.
+
+### Summary
+Both visualizations support the model's strong prediction of a pituitary tumor. The attention rollout heatmap focuses on the tumor's location, while the gradient saliency heatmap highlights features that influenced the model's reasoning. Together, they provide a clear indication that the model is confident in its diagnosis. 
+
+This analysis is for research purposes and should not be considered a clinical diagnosis. Always consult a medical professional for accurate diagnosis and treatment.

@@ -1,0 +1,81 @@
+{
+  "original_mri_included": false,
+  "xai_images_included": true,
+  "exact_xai_methods_included": [
+    "gradcam",
+    "chefer_attribution",
+    "integrated_gradients",
+    "occlusion"
+  ],
+  "predicted_class": "glioma_tumor",
+  "true_class_for_evaluation_only": null,
+  "class_probabilities": {
+    "glioma_tumor": 1.0,
+    "meningioma_tumor": 2.96e-08,
+    "no_tumor": 7.59e-11,
+    "pituitary_tumor": 6.66e-09
+  },
+  "quantitative_localization_metrics": {
+    "dice": null,
+    "iou": null,
+    "note": "MASK_UNAVAILABLE"
+  },
+  "text_summaries": {
+    "gradcam": "ViT Grad-CAM on a transformer block after removing CLS and register tokens and reshaping patch tokens to a spatial grid.",
+    "chefer_attribution": "Chefer Transformer Attribution (fallback for AttnLRP; HuggingFace DINOv3 does not expose AttnLRP rules).",
+    "integrated_gradients": "Integrated Gradients from a chosen baseline; combined map is positive-channel evidence only. Negative evidence is stored separately.",
+    "occlusion": "Signed change in target-class probability when a region is masked. Positive = probability decreases when masked (supportive region)."
+  },
+  "system_prompt": "You are a technical writer producing a MODEL EXPLANATION SUMMARY for a research paper on a four-class brain MRI classifier (glioma, meningioma, pituitary tumor, no tumor).\n\nThis is NOT a clinical radiology report and has not been evaluated by qualified clinicians. Do not present it as a diagnosis.\n\nYou may ONLY use facts that appear in the structured evidence block of the user message. You must not invent anatomy, pathology, or clinical recommendations.\n\nForbidden unless the exact fact is present as a validated input field:\n- anatomical lobe or laterality (frontal, parietal, temporal, occipital, left/right hemisphere)\n- edema, hemorrhage, necrosis, mass effect, midline shift, invasion, infiltration\n- tumor size or measurements (cm, mm)\n- enhancement pattern (ring-enhancing, contrast enhancement)\n- clinical diagnosis, WHO grade, treatment or follow-up recommendations\n\nOcclusion maps and attention maps do not support those medical claims.\n\nRequired output: a JSON object with exactly these keys:\n1. model_prediction\n2. prediction_confidence\n3. explanation_summary\n4. agreement_between_xai_methods\n5. important_limitations\n6. research_use_warning\n\nRules:\n- Restate the predicted class using the provided class name only.\n- Restate the provided probability to two decimal places or as given.\n- Name XAI methods using the exact method names supplied (e.g. gradcam, chefer_attribution, integrated_gradients, occlusion, attention_rollout).\n- State that attention rollout is not class-specific and is not proof of causality.\n- If a metric is null or MASK_UNAVAILABLE, say the metric was not computed.\n- If images are listed as not included, do not claim that you saw an MRI or a heatmap.\n- Include a research-use warning that this is a model explanation summary, not a clinical report.\n",
+  "user_prompt_template": "Mode: multimodal\n\nStructured evidence (validated input):\n- image_id: brisc2025_test_00001_gl_ax_t1\n- predicted_class: glioma_tumor\n- class_probabilities: {'glioma_tumor': 1.0, 'meningioma_tumor': 2.96e-08, 'no_tumor': 7.59e-11, 'pituitary_tumor': 6.66e-09}\n- xai_methods_included: ['gradcam', 'chefer_attribution', 'integrated_gradients', 'occlusion']\n- quantitative_localization_metrics: {'dice': None, 'iou': None, 'note': 'MASK_UNAVAILABLE'}\n- method_descriptions: {'gradcam': 'ViT Grad-CAM on a transformer block after removing CLS and register tokens and reshaping patch tokens to a spatial grid.', 'chefer_attribution': 'Chefer Transformer Attribution (fallback for AttnLRP; HuggingFace DINOv3 does not expose AttnLRP rules).', 'integrated_gradients': 'Integrated Gradients from a chosen baseline; combined map is positive-channel evidence only. Negative evidence is stored separately.', 'occlusion': 'Signed change in target-class probability when a region is masked. Positive = probability decreases when masked (supportive region).'}\n- original_mri_included: False\n- xai_images_included: True\n- xai_image_files: ['gradcam', 'chefer_attribution', 'integrated_gradients', 'occlusion']\n\ntrue_class is provided only for offline evaluation and must not be used as diagnostic input.\n\nWrite the JSON object now. Do not add keys. Do not add medical claims that are not in the evidence.\n",
+  "rendered_user_prompt": "Mode: multimodal\n\nStructured evidence (validated input):\n- image_id: brisc2025_test_00001_gl_ax_t1\n- predicted_class: glioma_tumor\n- class_probabilities: {'glioma_tumor': 1.0, 'meningioma_tumor': 2.96e-08, 'no_tumor': 7.59e-11, 'pituitary_tumor': 6.66e-09}\n- xai_methods_included: ['gradcam', 'chefer_attribution', 'integrated_gradients', 'occlusion']\n- quantitative_localization_metrics: {'dice': None, 'iou': None, 'note': 'MASK_UNAVAILABLE'}\n- method_descriptions: {'gradcam': 'ViT Grad-CAM on a transformer block after removing CLS and register tokens and reshaping patch tokens to a spatial grid.', 'chefer_attribution': 'Chefer Transformer Attribution (fallback for AttnLRP; HuggingFace DINOv3 does not expose AttnLRP rules).', 'integrated_gradients': 'Integrated Gradients from a chosen baseline; combined map is positive-channel evidence only. Negative evidence is stored separately.', 'occlusion': 'Signed change in target-class probability when a region is masked. Positive = probability decreases when masked (supportive region).'}\n- original_mri_included: False\n- xai_images_included: True\n- xai_image_files: ['gradcam', 'chefer_attribution', 'integrated_gradients', 'occlusion']\n\ntrue_class is provided only for offline evaluation and must not be used as diagnostic input.\n\nWrite the JSON object now. Do not add keys. Do not add medical claims that are not in the evidence.\n",
+  "output_schema": {
+    "type": "object",
+    "required": [
+      "model_prediction",
+      "prediction_confidence",
+      "explanation_summary",
+      "agreement_between_xai_methods",
+      "important_limitations",
+      "research_use_warning"
+    ],
+    "properties": {
+      "model_prediction": {
+        "type": "string"
+      },
+      "prediction_confidence": {
+        "type": "string"
+      },
+      "explanation_summary": {
+        "type": "string"
+      },
+      "agreement_between_xai_methods": {
+        "type": "string"
+      },
+      "important_limitations": {
+        "type": "string"
+      },
+      "research_use_warning": {
+        "type": "string"
+      }
+    }
+  },
+  "model_identifier": "gemini-3.6-flash",
+  "model_snapshot": "gemini-3.6-flash",
+  "request_date": "2026-08-31T02:58:27.797345+00:00",
+  "temperature": 0.0,
+  "token_limit": 4096,
+  "retry_count": 0,
+  "retry_policy": {
+    "max_retries": 2,
+    "on_schema_fail": "retry_once_then_record_failure"
+  },
+  "response_identifier": "1u2UavSlFOjSjMcP3_mlqQw",
+  "images_in_actual_payload": [
+    "C:\\Users\\darji\\OneDrive\\Desktop\\Multi-Agent-dinov3-explainable-tumor-detection-framework-main\\artifacts\\reviewer_experiments\\xai_full\\smoke\\maps\\brisc2025_test_00001_gl_ax_t1\\gradcam\\overlay.png",
+    "C:\\Users\\darji\\OneDrive\\Desktop\\Multi-Agent-dinov3-explainable-tumor-detection-framework-main\\artifacts\\reviewer_experiments\\xai_full\\smoke\\maps\\brisc2025_test_00001_gl_ax_t1\\chefer_attribution\\overlay.png",
+    "C:\\Users\\darji\\OneDrive\\Desktop\\Multi-Agent-dinov3-explainable-tumor-detection-framework-main\\artifacts\\reviewer_experiments\\xai_full\\smoke\\maps\\brisc2025_test_00001_gl_ax_t1\\integrated_gradients\\overlay.png",
+    "C:\\Users\\darji\\OneDrive\\Desktop\\Multi-Agent-dinov3-explainable-tumor-detection-framework-main\\artifacts\\reviewer_experiments\\xai_full\\smoke\\maps\\brisc2025_test_00001_gl_ax_t1\\occlusion\\overlay.png"
+  ],
+  "claim": "LLM received raw images or XAI panels"
+}

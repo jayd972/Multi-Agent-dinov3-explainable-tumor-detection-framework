@@ -1,0 +1,535 @@
+{
+  "timestamp": "2026-08-30T14:54:05.997937",
+  "config": {
+    "model_path": "C:\\Users\\darji\\OneDrive\\Desktop\\Multi-Agent-dinov3-explainable-tumor-detection-framework-main\\artifacts\\models\\clf.pth",
+    "model_id": "facebook/dinov3-vitb16-pretrain-lvd1689m",
+    "n_samples_per_class": 10,
+    "n_deletion_steps": 20,
+    "seed": 42,
+    "device": "cuda",
+    "total_samples_evaluated": 40,
+    "localization_thresholds": [
+      0.25,
+      0.5,
+      0.75
+    ]
+  },
+  "ground_truth_status": {
+    "tumor_masks": "AVAILABLE",
+    "mask_directory": "C:\\Users\\darji\\Downloads\\BT_Images\\segmentation_task\\test\\masks",
+    "bounding_boxes": "NOT AVAILABLE",
+    "localization_metrics_computed": true,
+    "n_tumor_images_with_masks": 30,
+    "n_tumor_images_total": 30,
+    "note": "Official BRISC segmentation masks used. 30/30 tumor images had matching masks. Localization metrics (Dice, IoU, Pointing Game) computed at multiple thresholds."
+  },
+  "aggregate_faithfulness_results": {
+    "gradient_saliency": {
+      "deletion_auc": {
+        "mean": 0.5570345714450833,
+        "std": 0.2065246639311865,
+        "median": 0.6346324534271843,
+        "n": 40
+      },
+      "insertion_auc": {
+        "mean": 0.6556026785808717,
+        "std": 0.2426232564602151,
+        "median": 0.7052712180324306,
+        "n": 40
+      },
+      "topk_drop": {
+        "mean": 0.16032405942678452,
+        "std": 0.31721011782885344,
+        "median": 0.0016052424907684326,
+        "n": 40
+      },
+      "random_drop": {
+        "mean": 0.08108194262417108,
+        "std": 0.19660184859349794,
+        "median": 0.0013607680448330939,
+        "n": 40
+      },
+      "drop_ratio": {
+        "mean": 3233.836301534496,
+        "std": 20144.410453532015,
+        "median": 2.152623414993286,
+        "n": 40
+      }
+    },
+    "attention_rollout": {
+      "deletion_auc": {
+        "mean": 0.7054904492106653,
+        "std": 0.19776590068150438,
+        "median": 0.7710750088095666,
+        "n": 40
+      },
+      "insertion_auc": {
+        "mean": 0.8386212775865112,
+        "std": 0.15812335372279665,
+        "median": 0.8865828010253607,
+        "n": 40
+      },
+      "topk_drop": {
+        "mean": 0.11570335626602173,
+        "std": 0.2668557367244851,
+        "median": 0.0027347207069396973,
+        "n": 40
+      },
+      "random_drop": {
+        "mean": 0.08108194262417108,
+        "std": 0.19660184859349794,
+        "median": 0.0013607680448330939,
+        "n": 40
+      },
+      "drop_ratio": {
+        "mean": 8397.628994928238,
+        "std": 35257.93140158916,
+        "median": 0.6667074412107468,
+        "n": 40
+      }
+    },
+    "occlusion": {
+      "deletion_auc": {
+        "mean": 0.658071466254405,
+        "std": 0.23535374706659273,
+        "median": 0.6963386980642099,
+        "n": 40
+      },
+      "insertion_auc": {
+        "mean": 0.8943405107961372,
+        "std": 0.07829418777187958,
+        "median": 0.9096608631312847,
+        "n": 40
+      },
+      "topk_drop": {
+        "mean": 0.18680931478738785,
+        "std": 0.345956881171269,
+        "median": 0.0025953948497772217,
+        "n": 40
+      },
+      "random_drop": {
+        "mean": 0.08108194262417108,
+        "std": 0.19660184859349794,
+        "median": 0.0013607680448330939,
+        "n": 40
+      },
+      "drop_ratio": {
+        "mean": 3600.857830250229,
+        "std": 22058.039595878137,
+        "median": 1.100098967552185,
+        "n": 40
+      }
+    }
+  },
+  "aggregate_localization_results": {
+    "gradient_saliency": {
+      "threshold_0.25": {
+        "dice": {
+          "mean": 0.10201998067317172,
+          "std": 0.09344001622717954,
+          "median": 0.09283749712088349,
+          "n": 30
+        },
+        "iou": {
+          "mean": 0.0562690704134882,
+          "std": 0.05293419310743775,
+          "median": 0.04868879105993905,
+          "n": 30
+        },
+        "pointing_game": {
+          "mean": 0.3333333333333333,
+          "std": 0.4794633014853841,
+          "median": 0.0,
+          "n": 30
+        },
+        "mass_inside": {
+          "mean": 0.05120476598388376,
+          "std": 0.05212208786910952,
+          "median": 0.037176244854981895,
+          "n": 30
+        }
+      },
+      "threshold_0.5": {
+        "dice": {
+          "mean": 0.025855370186173798,
+          "std": 0.036329365335786165,
+          "median": 0.013067114341197459,
+          "n": 30
+        },
+        "iou": {
+          "mean": 0.013443137184475725,
+          "std": 0.019466232893354005,
+          "median": 0.006577123235080834,
+          "n": 30
+        },
+        "pointing_game": {
+          "mean": 0.3333333333333333,
+          "std": 0.4794633014853841,
+          "median": 0.0,
+          "n": 30
+        },
+        "mass_inside": {
+          "mean": 0.05120476598388376,
+          "std": 0.05212208786910952,
+          "median": 0.037176244854981895,
+          "n": 30
+        }
+      },
+      "threshold_0.75": {
+        "dice": {
+          "mean": 0.004525541512820155,
+          "std": 0.010520211281522729,
+          "median": 0.0,
+          "n": 30
+        },
+        "iou": {
+          "mean": 0.0022953168260796387,
+          "std": 0.005379357246998946,
+          "median": 0.0,
+          "n": 30
+        },
+        "pointing_game": {
+          "mean": 0.3333333333333333,
+          "std": 0.4794633014853841,
+          "median": 0.0,
+          "n": 30
+        },
+        "mass_inside": {
+          "mean": 0.05120476598388376,
+          "std": 0.05212208786910952,
+          "median": 0.037176244854981895,
+          "n": 30
+        }
+      }
+    },
+    "attention_rollout": {
+      "threshold_0.25": {
+        "dice": {
+          "mean": 0.242084786459046,
+          "std": 0.2631122995827809,
+          "median": 0.09366003843720849,
+          "n": 30
+        },
+        "iou": {
+          "mean": 0.1660954859002965,
+          "std": 0.19755526208567334,
+          "median": 0.049384210326590475,
+          "n": 30
+        },
+        "pointing_game": {
+          "mean": 0.5,
+          "std": 0.5085476277156078,
+          "median": 0.5,
+          "n": 30
+        },
+        "mass_inside": {
+          "mean": 0.05973263041644778,
+          "std": 0.060323585269614365,
+          "median": 0.032312378492048294,
+          "n": 30
+        }
+      },
+      "threshold_0.5": {
+        "dice": {
+          "mean": 0.3361733443753488,
+          "std": 0.30209869451264293,
+          "median": 0.24519649773059993,
+          "n": 30
+        },
+        "iou": {
+          "mean": 0.2442956829008818,
+          "std": 0.2425021139251522,
+          "median": 0.13986194969959898,
+          "n": 30
+        },
+        "pointing_game": {
+          "mean": 0.5,
+          "std": 0.5085476277156078,
+          "median": 0.5,
+          "n": 30
+        },
+        "mass_inside": {
+          "mean": 0.05973263041644778,
+          "std": 0.060323585269614365,
+          "median": 0.032312378492048294,
+          "n": 30
+        }
+      },
+      "threshold_0.75": {
+        "dice": {
+          "mean": 0.19361470926074573,
+          "std": 0.21344721831912528,
+          "median": 0.1330724030536593,
+          "n": 30
+        },
+        "iou": {
+          "mean": 0.12441826118499216,
+          "std": 0.1520207111337505,
+          "median": 0.07145582837022886,
+          "n": 30
+        },
+        "pointing_game": {
+          "mean": 0.5,
+          "std": 0.5085476277156078,
+          "median": 0.5,
+          "n": 30
+        },
+        "mass_inside": {
+          "mean": 0.05973263041644778,
+          "std": 0.060323585269614365,
+          "median": 0.032312378492048294,
+          "n": 30
+        }
+      }
+    },
+    "occlusion": {
+      "threshold_0.25": {
+        "dice": {
+          "mean": 0.15598509749730188,
+          "std": 0.1673630210564791,
+          "median": 0.1155644725321612,
+          "n": 30
+        },
+        "iou": {
+          "mean": 0.09383734995914399,
+          "std": 0.10565955721217381,
+          "median": 0.0617080208102652,
+          "n": 30
+        },
+        "pointing_game": {
+          "mean": 0.36666666666666664,
+          "std": 0.4901325178535609,
+          "median": 0.0,
+          "n": 30
+        },
+        "mass_inside": {
+          "mean": 0.16508595653235444,
+          "std": 0.23999887394248187,
+          "median": 0.05762056358741455,
+          "n": 30
+        }
+      },
+      "threshold_0.5": {
+        "dice": {
+          "mean": 0.17137041573124775,
+          "std": 0.18334657080715644,
+          "median": 0.11343044106104432,
+          "n": 30
+        },
+        "iou": {
+          "mean": 0.10482676827976338,
+          "std": 0.11481426572751423,
+          "median": 0.06165967432407897,
+          "n": 30
+        },
+        "pointing_game": {
+          "mean": 0.36666666666666664,
+          "std": 0.4901325178535609,
+          "median": 0.0,
+          "n": 30
+        },
+        "mass_inside": {
+          "mean": 0.16508595653235444,
+          "std": 0.23999887394248187,
+          "median": 0.05762056358741455,
+          "n": 30
+        }
+      },
+      "threshold_0.75": {
+        "dice": {
+          "mean": 0.1389841943830983,
+          "std": 0.16708798484211598,
+          "median": 0.022487379531895366,
+          "n": 30
+        },
+        "iou": {
+          "mean": 0.08372066020104785,
+          "std": 0.10437924860157555,
+          "median": 0.011502347417840376,
+          "n": 30
+        },
+        "pointing_game": {
+          "mean": 0.36666666666666664,
+          "std": 0.4901325178535609,
+          "median": 0.0,
+          "n": 30
+        },
+        "mass_inside": {
+          "mean": 0.16508595653235444,
+          "std": 0.23999887394248187,
+          "median": 0.05762056358741455,
+          "n": 30
+        }
+      }
+    }
+  },
+  "per_class_results": {
+    "glioma_tumor": {
+      "gradient_saliency": {
+        "mean": 0.7232700031623244,
+        "std": 0.10397805102573139,
+        "n": 10
+      },
+      "attention_rollout": {
+        "mean": 0.6908681430201977,
+        "std": 0.17912617201549866,
+        "n": 10
+      },
+      "occlusion": {
+        "mean": 0.6049254502262921,
+        "std": 0.2284678157247859,
+        "n": 10
+      }
+    },
+    "meningioma_tumor": {
+      "gradient_saliency": {
+        "mean": 0.35493927654508295,
+        "std": 0.1718256008027481,
+        "n": 10
+      },
+      "attention_rollout": {
+        "mean": 0.48134140918962653,
+        "std": 0.20748978077392674,
+        "n": 10
+      },
+      "occlusion": {
+        "mean": 0.47833300674101337,
+        "std": 0.2826705937032876,
+        "n": 10
+      }
+    },
+    "no_tumor": {
+      "gradient_saliency": {
+        "mean": 0.5150604825734627,
+        "std": 0.19538470496312357,
+        "n": 10
+      },
+      "attention_rollout": {
+        "mean": 0.8376662747561932,
+        "std": 0.0686355273482282,
+        "n": 10
+      },
+      "occlusion": {
+        "mean": 0.8134781729802489,
+        "std": 0.14088806700396975,
+        "n": 10
+      }
+    },
+    "pituitary_tumor": {
+      "gradient_saliency": {
+        "mean": 0.6348685234994628,
+        "std": 0.14677359265417275,
+        "n": 10
+      },
+      "attention_rollout": {
+        "mean": 0.8120859698766434,
+        "std": 0.03916469016345229,
+        "n": 10
+      },
+      "occlusion": {
+        "mean": 0.7355492350700661,
+        "std": 0.1246651296327539,
+        "n": 10
+      }
+    }
+  },
+  "statistical_tests": [
+    {
+      "metric": "deletion_auc",
+      "method_1": "gradient_saliency",
+      "method_2": "attention_rollout",
+      "n": 40,
+      "statistic": 107.0,
+      "p_value": 1.430089287168812e-05,
+      "bonferroni_alpha": 0.016666666666666666,
+      "significant": true,
+      "mean_1": 0.5570345714450833,
+      "mean_2": 0.7054904492106653
+    },
+    {
+      "metric": "deletion_auc",
+      "method_1": "gradient_saliency",
+      "method_2": "occlusion",
+      "n": 40,
+      "statistic": 233.0,
+      "p_value": 0.01650634321049438,
+      "bonferroni_alpha": 0.016666666666666666,
+      "significant": true,
+      "mean_1": 0.5570345714450833,
+      "mean_2": 0.658071466254405
+    },
+    {
+      "metric": "deletion_auc",
+      "method_1": "attention_rollout",
+      "method_2": "occlusion",
+      "n": 40,
+      "statistic": 281.0,
+      "p_value": 0.08415465162215696,
+      "bonferroni_alpha": 0.016666666666666666,
+      "significant": false,
+      "mean_1": 0.7054904492106653,
+      "mean_2": 0.658071466254405
+    },
+    {
+      "metric": "insertion_auc",
+      "method_1": "gradient_saliency",
+      "method_2": "attention_rollout",
+      "n": 40,
+      "statistic": 123.0,
+      "p_value": 4.7302397433668375e-05,
+      "bonferroni_alpha": 0.016666666666666666,
+      "significant": true,
+      "mean_1": 0.6556026785808717,
+      "mean_2": 0.8386212775865112
+    },
+    {
+      "metric": "insertion_auc",
+      "method_1": "gradient_saliency",
+      "method_2": "occlusion",
+      "n": 40,
+      "statistic": 63.0,
+      "p_value": 2.535471139708534e-07,
+      "bonferroni_alpha": 0.016666666666666666,
+      "significant": true,
+      "mean_1": 0.6556026785808717,
+      "mean_2": 0.8943405107961372
+    },
+    {
+      "metric": "insertion_auc",
+      "method_1": "attention_rollout",
+      "method_2": "occlusion",
+      "n": 40,
+      "statistic": 185.0,
+      "p_value": 0.0019595077046687948,
+      "bonferroni_alpha": 0.016666666666666666,
+      "significant": true,
+      "mean_1": 0.8386212775865112,
+      "mean_2": 0.8943405107961372
+    }
+  ],
+  "methods_evaluated": [
+    "gradient_saliency",
+    "attention_rollout",
+    "occlusion"
+  ],
+  "interpretation_guide": {
+    "deletion_auc": "Lower is better (removing important pixels should hurt prediction more)",
+    "insertion_auc": "Higher is better (adding important pixels should help prediction more)",
+    "topk_drop": "Higher is better (top-k pixels by attribution cause larger confidence drop when removed)",
+    "random_drop": "Baseline: confidence drop from removing random pixels of same area",
+    "drop_ratio": "Higher is better (topk_drop / random_drop; >1 means attribution is better than random)",
+    "dice": "Higher is better [0-1]. Measures overlap between thresholded heatmap and tumor mask.",
+    "iou": "Higher is better [0-1]. Intersection over union of thresholded heatmap and tumor mask.",
+    "pointing_game": "Binary [0 or 1]. 1 if the heatmap maximum falls inside the tumor mask.",
+    "mass_inside": "Higher is better [0-1]. Fraction of total attribution energy inside the tumor region."
+  },
+  "limitations": [
+    "Deletion/insertion metrics measure faithfulness to the model, not anatomical correctness.",
+    "Localization metrics depend on the binarization threshold chosen for the heatmap.",
+    "Occlusion is computationally expensive and uses a fixed patch size (may miss fine structure).",
+    "Attention rollout is an approximation; true attention flow is more complex.",
+    "Sample size per class is limited for computational tractability.",
+    "No-tumor images are excluded from localization evaluation (no tumor region to localize).",
+    "Masks are provided at the image level; patient-level grouping is unavailable."
+  ]
+}

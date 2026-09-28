@@ -1,0 +1,8 @@
+{
+  "model_prediction": "meningioma_tumor",
+  "prediction_confidence": 0.99999,
+  "explanation_summary": "The model predicts a meningioma tumor with high confidence based on the provided MRI images. The attention rollout method indicates areas of interest but is not class-specific and does not provide proof of causality. Gradient saliency was also utilized to highlight important features in the images.",
+  "agreement_between_xai_methods": "The methods used (attention_rollout and gradient_saliency) provide complementary insights into the model's decision-making process.",
+  "important_limitations": "The quantitative localization metrics were not computed, and the attention rollout method is not class-specific.",
+  "research_use_warning": "This is a model explanation summary and not a clinical report."
+}

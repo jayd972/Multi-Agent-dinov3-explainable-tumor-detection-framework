@@ -1,0 +1,8 @@
+{
+  "model_prediction": "glioma_tumor",
+  "prediction_confidence": "1.00",
+  "explanation_summary": "The model predicted the class glioma_tumor with a probability of 1.00. Explanation methods referenced include gradcam (ViT Grad-CAM on reshaped patch tokens), chefer_attribution (Chefer Transformer Attribution), integrated_gradients (positive-channel evidence relative to a baseline), and occlusion (signed probability change when masking regions). Because neither the original MRI nor XAI heatmap images were included, visual feature visualisations could not be inspected.",
+  "agreement_between_xai_methods": "Quantitative localization metrics (Dice and IoU) were not computed due to masks being marked as MASK_UNAVAILABLE. Comparative visual alignment between gradcam, chefer_attribution, integrated_gradients, and occlusion could not be assessed because XAI images were not provided.",
+  "important_limitations": "No MRI or visual XAI heatmaps were included for evaluation. Quantitative localization metrics were not computed. Note that attention rollout is not class-specific and is not proof of causality. No anatomical details, pathological features, or visual feature locations can be asserted.",
+  "research_use_warning": "This document is a model explanation summary for research use only. It is not a clinical radiology report and has not been evaluated by qualified clinicians for diagnostic decision-making."
+}

@@ -1,0 +1,72 @@
+{
+  "original_mri_included": true,
+  "xai_images_included": true,
+  "exact_xai_methods_included": [
+    "attention_rollout",
+    "gradient_saliency"
+  ],
+  "predicted_class": "glioma_tumor",
+  "true_class_for_evaluation_only": "glioma_tumor",
+  "class_probabilities": {
+    "glioma_tumor": 1.0
+  },
+  "quantitative_localization_metrics": {
+    "dice": null,
+    "note": "MASK_AVAILABLE"
+  },
+  "text_summaries": {
+    "attention_rollout": "Abnar-Zuidema attention rollout with residual identity and row normalization. NOT class-specific. NOT causal proof.",
+    "gradient_saliency": "gradient_saliency"
+  },
+  "system_prompt": "You are a technical writer producing a MODEL EXPLANATION SUMMARY for a research paper on a four-class brain MRI classifier (glioma, meningioma, pituitary tumor, no tumor).\n\nThis is NOT a clinical radiology report and has not been evaluated by qualified clinicians. Do not present it as a diagnosis.\n\nYou may ONLY use facts that appear in the structured evidence block of the user message. You must not invent anatomy, pathology, or clinical recommendations.\n\nForbidden unless the exact fact is present as a validated input field:\n- anatomical lobe or laterality (frontal, parietal, temporal, occipital, left/right hemisphere)\n- edema, hemorrhage, necrosis, mass effect, midline shift, invasion, infiltration\n- tumor size or measurements (cm, mm)\n- enhancement pattern (ring-enhancing, contrast enhancement)\n- clinical diagnosis, WHO grade, treatment or follow-up recommendations\n\nOcclusion maps and attention maps do not support those medical claims.\n\nRequired output: a JSON object with exactly these keys:\n1. model_prediction\n2. prediction_confidence\n3. explanation_summary\n4. agreement_between_xai_methods\n5. important_limitations\n6. research_use_warning\n\nRules:\n- Restate the predicted class using the provided class name only.\n- Restate the provided probability to two decimal places or as given.\n- Name XAI methods using the exact method names supplied (e.g. gradcam, chefer_attribution, integrated_gradients, occlusion, attention_rollout).\n- State that attention rollout is not class-specific and is not proof of causality.\n- If a metric is null or MASK_UNAVAILABLE, say the metric was not computed.\n- If images are listed as not included, do not claim that you saw an MRI or a heatmap.\n- Include a research-use warning that this is a model explanation summary, not a clinical report.\n",
+  "user_prompt_template": "Mode: multimodal\n\nStructured evidence (validated input):\n- image_id: brisc2025_test_00034_gl_ax_t1\n- predicted_class: glioma_tumor\n- class_probabilities: {'glioma_tumor': 1.0}\n- xai_methods_included: ['attention_rollout', 'gradient_saliency']\n- quantitative_localization_metrics: {'dice': None, 'note': 'MASK_AVAILABLE'}\n- method_descriptions: {'attention_rollout': 'Abnar-Zuidema attention rollout with residual identity and row normalization. NOT class-specific. NOT causal proof.', 'gradient_saliency': 'gradient_saliency'}\n- original_mri_included: True\n- xai_images_included: True\n- xai_image_files: ['attention_rollout', 'gradient_saliency']\n\ntrue_class is provided only for offline evaluation and must not be used as diagnostic input.\n\nWrite the JSON object now. Do not add keys. Do not add medical claims that are not in the evidence.\n",
+  "rendered_user_prompt": "Mode: multimodal\n\nStructured evidence (validated input):\n- image_id: brisc2025_test_00034_gl_ax_t1\n- predicted_class: glioma_tumor\n- class_probabilities: {'glioma_tumor': 1.0}\n- xai_methods_included: ['attention_rollout', 'gradient_saliency']\n- quantitative_localization_metrics: {'dice': None, 'note': 'MASK_AVAILABLE'}\n- method_descriptions: {'attention_rollout': 'Abnar-Zuidema attention rollout with residual identity and row normalization. NOT class-specific. NOT causal proof.', 'gradient_saliency': 'gradient_saliency'}\n- original_mri_included: True\n- xai_images_included: True\n- xai_image_files: ['attention_rollout', 'gradient_saliency']\n\ntrue_class (evaluation only, do not treat as a diagnostic input): glioma_tumor\n\nWrite the JSON object now. Do not add keys. Do not add medical claims that are not in the evidence.\n",
+  "output_schema": {
+    "type": "object",
+    "required": [
+      "model_prediction",
+      "prediction_confidence",
+      "explanation_summary",
+      "agreement_between_xai_methods",
+      "important_limitations",
+      "research_use_warning"
+    ],
+    "properties": {
+      "model_prediction": {
+        "type": "string"
+      },
+      "prediction_confidence": {
+        "type": "string"
+      },
+      "explanation_summary": {
+        "type": "string"
+      },
+      "agreement_between_xai_methods": {
+        "type": "string"
+      },
+      "important_limitations": {
+        "type": "string"
+      },
+      "research_use_warning": {
+        "type": "string"
+      }
+    }
+  },
+  "model_identifier": "gpt-4o-mini",
+  "model_snapshot": "gpt-4o-mini",
+  "request_date": "2026-08-31T10:12:33.033096+00:00",
+  "temperature": 0.0,
+  "token_limit": 4096,
+  "retry_count": 0,
+  "retry_policy": {
+    "max_retries": 2,
+    "on_schema_fail": "retry_once_then_record_failure"
+  },
+  "response_identifier": "chatcmpl-EItIASB0ytuW8S5etXJwytTRFqbTQ",
+  "images_in_actual_payload": [
+    "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\glioma\\brisc2025_test_00034_gl_ax_t1.jpg",
+    "C:\\Users\\darji\\OneDrive\\Desktop\\Multi-Agent-dinov3-explainable-tumor-detection-framework-main\\artifacts\\explain\\by_image\\brisc2025_test_00034_gl_ax_t1\\attn_rollout.png",
+    "C:\\Users\\darji\\OneDrive\\Desktop\\Multi-Agent-dinov3-explainable-tumor-detection-framework-main\\artifacts\\explain\\by_image\\brisc2025_test_00034_gl_ax_t1\\grad_saliency.png"
+  ],
+  "claim": "LLM received raw images or XAI panels"
+}

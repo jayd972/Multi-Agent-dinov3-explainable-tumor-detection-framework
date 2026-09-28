@@ -1,0 +1,9 @@
+train_path,test_path,train_class,test_class,dhash_similarity
+C:\Users\darji\Downloads\BT_Images\Training\glioma\brisc2025_train_00241_gl_ax_t1.jpg,C:\Users\darji\Downloads\BT_Images\Testing\glioma\brisc2025_test_00067_gl_ax_t1.jpg,glioma,glioma,0.9453125
+C:\Users\darji\Downloads\BT_Images\Training\meningioma\brisc2025_train_01256_me_ax_t1.jpg,C:\Users\darji\Downloads\BT_Images\Testing\meningioma\brisc2025_test_00257_me_ax_t1.jpg,meningioma,meningioma,1.0
+C:\Users\darji\Downloads\BT_Images\Training\meningioma\brisc2025_train_01256_me_ax_t1.jpg,C:\Users\darji\Downloads\BT_Images\Testing\meningioma\brisc2025_test_00267_me_ax_t1.jpg,meningioma,meningioma,0.9921875
+C:\Users\darji\Downloads\BT_Images\Training\pituitary\brisc2025_train_03912_pi_ax_t1.jpg,C:\Users\darji\Downloads\BT_Images\Testing\pituitary\brisc2025_test_00806_pi_ax_t1.jpg,pituitary,pituitary,0.91796875
+C:\Users\darji\Downloads\BT_Images\Training\meningioma\brisc2025_train_01294_me_ax_t1.jpg,C:\Users\darji\Downloads\BT_Images\Testing\meningioma\brisc2025_test_00265_me_ax_t1.jpg,meningioma,meningioma,0.984375
+C:\Users\darji\Downloads\BT_Images\Training\meningioma\brisc2025_train_01261_me_ax_t1.jpg,C:\Users\darji\Downloads\BT_Images\Testing\meningioma\brisc2025_test_00255_me_ax_t1.jpg,meningioma,meningioma,1.0
+C:\Users\darji\Downloads\BT_Images\Training\meningioma\brisc2025_train_01282_me_ax_t1.jpg,C:\Users\darji\Downloads\BT_Images\Testing\meningioma\brisc2025_test_00290_me_ax_t1.jpg,meningioma,meningioma,1.0
+C:\Users\darji\Downloads\BT_Images\Training\glioma\brisc2025_train_00240_gl_ax_t1.jpg,C:\Users\darji\Downloads\BT_Images\Testing\glioma\brisc2025_test_00067_gl_ax_t1.jpg,glioma,glioma,0.90625

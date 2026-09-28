@@ -1,0 +1,20 @@
+{
+  "schema_compliant": true,
+  "predicted_class_agreement": true,
+  "probability_agreement": false,
+  "unsupported_anatomy_count": 0,
+  "unsupported_pathology_count": 0,
+  "unsupported_claim_list": [],
+  "contradiction_count": 1,
+  "contradictions": [
+    "probability_not_restated"
+  ],
+  "missing_required_fact_count": 0,
+  "missing_required_keys": [],
+  "hallucination_rate": 0.0,
+  "schema_compliance_rate": 1.0,
+  "xai_method_naming_accuracy": true,
+  "limitation_statement_present": true,
+  "pass_fail": "fail",
+  "judge": "programmatic_checks_not_llm"
+}

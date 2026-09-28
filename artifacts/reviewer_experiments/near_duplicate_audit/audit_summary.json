@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-08-27T03:00:05.155733",
+  "dataset_root": "C:\\Users\\darji\\Downloads\\BT_Images",
+  "n_train_images": 5000,
+  "n_test_images": 1000,
+  "methods_used": [
+    "SHA256",
+    "pHash",
+    "dHash",
+    "DINOv3_cosine_similarity"
+  ],
+  "exact_duplicates": {
+    "total_groups": 46,
+    "cross_split_groups": 7,
+    "within_split_groups": 39
+  },
+  "perceptual_hash_analysis": {
+    "phash_threshold": 0.9,
+    "dhash_threshold": 0.9,
+    "phash_suspicious_pairs": 6,
+    "dhash_suspicious_pairs": 8,
+    "phash_distribution": {
+      "mean": 0.518009765625,
+      "std": 0.048039844783878426,
+      "p95": 0.6015625,
+      "p99": 0.65625,
+      "max": 1.0
+    },
+    "dhash_distribution": {
+      "mean": 0.547422109375,
+      "std": 0.05411766502192733,
+      "p95": 0.640625,
+      "p99": 0.70703125,
+      "max": 1.0
+    }
+  },
+  "embedding_analysis": {
+    "computed": true,
+    "threshold": 0.95,
+    "suspicious_pairs": 855,
+    "distribution": {
+      "mean": 0.6630612015724182,
+      "std": 0.10210045427083969,
+      "p50": 0.6619458794593811,
+      "p95": 0.8321672677993774,
+      "p99": 0.880645751953125,
+      "max": 1.0000004768371582
+    }
+  },
+  "patient_level_independence": "UNKNOWN - No patient IDs available in this dataset. Cannot verify whether the same patient's images appear in both splits under different filenames or acquisition parameters.",
+  "limitations": [
+    "Patient-level independence cannot be established without patient metadata.",
+    "Perceptual hashes may miss semantically similar images with different windowing/contrast.",
+    "Embedding similarity threshold is heuristic; manual review of top pairs is essential.",
+    "Same-class high similarity may be expected (similar anatomy) vs concerning (same patient)."
+  ]
+}

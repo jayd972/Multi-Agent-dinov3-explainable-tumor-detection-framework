@@ -1,0 +1,18 @@
+Based on the provided information, here's a plain language explanation of what the visualizations suggest about the model's reasoning regarding the predicted class of a pituitary tumor:
+
+### Predicted Class
+- **Pituitary Tumor**: The model is highly confident (probability of 1.000) that the tumor is a pituitary tumor. Other potential classes (glioma, meningioma, and no tumor) received a score of 0.000, indicating the model did not find evidence for these conditions.
+
+### Attention Rollout Heatmap
+- **Description**: This heatmap highlights areas of the image that the model focused on when making its prediction.
+- **Interpretation**: The bright red area in the center suggests that the model identified a significant feature consistent with a pituitary tumor. The surrounding areas are less intense, indicating that the model did not find relevant features elsewhere in the image.
+
+### Gradient Saliency Heatmap
+- **Description**: This heatmap shows which parts of the image contributed most to the model's decision.
+- **Interpretation**: The red region again indicates the area where the model detected features associated with a pituitary tumor. The scattered blue and yellow areas suggest that other parts of the image were less important for the prediction.
+
+### Summary
+Both visualizations support the model's strong prediction of a pituitary tumor by focusing on a specific area in the brain that is characteristic of this type of tumor. The consistent highlighting in both heatmaps reinforces the model's reasoning and confidence in its diagnosis.
+
+### Caution
+This analysis is for research purposes and should not be considered a clinical diagnosis. Always consult a medical professional for accurate diagnosis and treatment.

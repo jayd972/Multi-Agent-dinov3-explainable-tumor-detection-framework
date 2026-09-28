@@ -1,0 +1,17 @@
+In this analysis of tumor images, we have two types of visualizations: an attention rollout heatmap and a gradient saliency heatmap. Both provide insights into how the model is making its predictions.
+
+### Predicted Class
+- **Glioma Tumor**: The model predicts a glioma tumor with a very high probability of 1.000, meaning it is very confident in this diagnosis.
+
+### Attention Rollout Heatmap
+- **Description**: This heatmap highlights areas of the image that the model considers important for its prediction.
+- **Interpretation**: The bright spots (often in red or yellow) indicate regions where the model is focusing its attention. In this case, the heatmap shows several highlighted areas that suggest the presence of tumor characteristics typical of gliomas. The darker areas (blue) indicate less relevance to the prediction.
+
+### Gradient Saliency Heatmap
+- **Description**: This heatmap shows how changes in the input image affect the model's output. It highlights which parts of the image contribute most to the prediction.
+- **Interpretation**: Similar to the attention heatmap, the bright spots in this visualization indicate areas that significantly influence the model's decision. The scattered bright areas suggest that there are multiple regions within the image that are contributing to the glioma diagnosis, while the darker regions indicate less influence.
+
+### Summary
+Both visualizations support the model's strong prediction of a glioma tumor. The attention rollout heatmap emphasizes specific areas of interest, while the gradient saliency heatmap shows how those areas impact the model's reasoning. The model's confidence (1.000) suggests a high likelihood of the presence of a glioma tumor based on the analyzed images. 
+
+This analysis is for research purposes and should not be considered a clinical diagnosis. Always consult a medical professional for accurate assessments.

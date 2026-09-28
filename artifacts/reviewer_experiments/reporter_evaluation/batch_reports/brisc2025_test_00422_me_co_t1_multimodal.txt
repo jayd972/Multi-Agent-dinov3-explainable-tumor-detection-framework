@@ -1,0 +1,19 @@
+Based on the analysis of the tumor images, here's a plain language explanation of what the visualizations suggest:
+
+### Predicted Class
+- **Meningioma Tumor**: The model predicts with high confidence (100%) that the tumor is a meningioma. This means it strongly believes that the characteristics of the tumor match those typically seen in meningiomas.
+
+### Top Scores
+- **Meningioma Tumor: 1.000**: This score indicates absolute certainty in the prediction of a meningioma.
+- **Glioma Tumor: 0.000**: There is no indication of a glioma, suggesting that the features of the tumor do not match this type.
+- **No Tumor: 0.000**: The model is certain that there is a tumor present.
+- **Pituitary Tumor: 0.000**: The features do not align with those of a pituitary tumor.
+
+### Attention Rollout Heatmap
+- The heatmap shows areas of the image that the model focused on when making its prediction. The bright red and yellow areas indicate regions where the model detected significant features associated with a meningioma. This suggests that the tumor is likely located in the frontal region of the brain, which is consistent with typical meningioma locations.
+
+### Gradient Saliency Heatmap
+- This heatmap highlights the importance of different areas in the image for the model's decision. The red areas indicate regions that contributed most to the prediction of a meningioma. The scattered colors suggest that while there are other features present, the model is primarily focused on the highlighted areas that correspond to the meningioma characteristics.
+
+### Summary
+Overall, both visualizations support the model's strong prediction of a meningioma tumor, showing that the model is focusing on the correct areas of the brain that are characteristic of this type of tumor. This analysis is for research purposes and should not be considered a clinical diagnosis. Always consult a medical professional for an accurate diagnosis and treatment options.

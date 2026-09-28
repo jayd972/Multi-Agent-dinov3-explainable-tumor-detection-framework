@@ -1,0 +1,21 @@
+Based on the information provided, here's a plain language explanation of what the visualizations suggest about the model's reasoning regarding the tumor analysis:
+
+### Predicted Class: No Tumor
+- **Probability: 1.000**: This means the model is very confident that there is no tumor present in the image.
+
+### Top Scores:
+- **No Tumor: 1.000**: The model strongly believes that the image shows no tumor.
+- **Glioma Tumor: 0.000**: The model sees no signs of glioma.
+- **Meningioma Tumor: 0.000**: The model sees no signs of meningioma.
+- **Pituitary Tumor: 0.000**: The model sees no signs of pituitary tumor.
+
+### Attention Rollout Heatmap:
+- **Description**: This heatmap highlights areas the model focused on while making its prediction. The bright areas (in red and yellow) indicate regions that the model considered important.
+- **Interpretation**: Since the model predicts "no tumor," the highlighted areas may show normal brain structures or features that do not indicate any tumor presence.
+
+### Gradient Saliency Heatmap:
+- **Description**: This heatmap shows which parts of the image influenced the model's decision. The colors represent the importance of different areas.
+- **Interpretation**: The scattered colors suggest that the model did not find any significant features that would indicate a tumor. The lack of concentrated bright areas supports the prediction of "no tumor."
+
+### Summary:
+Both visualizations support the model's strong prediction of "no tumor." The attention and saliency maps indicate that the model did not identify any abnormal features that would suggest the presence of a tumor. This analysis is for research purposes and should not be considered a clinical diagnosis. Always consult a medical professional for accurate evaluations.

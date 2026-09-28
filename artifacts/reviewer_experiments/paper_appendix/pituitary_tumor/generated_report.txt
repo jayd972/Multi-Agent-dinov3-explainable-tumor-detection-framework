@@ -1,0 +1,10 @@
+```json
+{
+  "model_prediction": "pituitary_tumor",
+  "prediction_confidence": 1.00,
+  "explanation_summary": "The model predicts a pituitary tumor with high confidence based on the provided MRI data. Various explainable AI (XAI) methods were utilized to assess the model's decision-making process.",
+  "agreement_between_xai_methods": "The XAI methods show varying degrees of agreement in identifying regions of interest, with occlusion yielding the highest Dice score of 0.85.",
+  "important_limitations": "Attention rollout is not class-specific and does not provide proof of causality. Additionally, the original MRI image was not included in the analysis.",
+  "research_use_warning": "This is a model explanation summary and not a clinical report."
+}
+```

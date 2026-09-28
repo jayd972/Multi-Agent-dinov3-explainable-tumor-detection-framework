@@ -1,0 +1,9 @@
+{
+  "structured_vs_multimodal": {
+    "generator": "offline_template_not_llm",
+    "n_cases_each_mode": 4,
+    "schema_compliance_rate": 1.0,
+    "unsupported_claim_count": 0,
+    "note": "Offline templates do not read pixels. Adding images cannot change the offline text. Whether images increase unsupported claims must be measured with python -m xai report-multimodal --image PATH --real versus report-structured --real. Clinician evaluation is not available."
+  }
+}

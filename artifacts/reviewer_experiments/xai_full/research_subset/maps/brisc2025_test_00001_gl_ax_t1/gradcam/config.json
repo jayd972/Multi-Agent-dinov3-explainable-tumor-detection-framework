@@ -1,0 +1,52 @@
+{
+  "method": "gradcam",
+  "algorithm": "ViT-GradCAM (Selvaraju et al., token activations + reshape)",
+  "target_class": 0,
+  "predicted_class": 0,
+  "class_probabilities": [
+    1.0,
+    2.9630623288312563e-08,
+    7.589950890007913e-11,
+    6.655897610841066e-09
+  ],
+  "input_hw": [
+    224,
+    224
+  ],
+  "attribution_hw": [
+    224,
+    224
+  ],
+  "config": {
+    "method": "gradcam",
+    "algorithm": "ViT-GradCAM (Selvaraju et al., token activations + reshape)",
+    "target_block": 10,
+    "n_blocks": 12,
+    "relu": true,
+    "normalization": "min-max after bilinear upsample",
+    "token_layout": {
+      "n_tokens": 201,
+      "cls_index": 0,
+      "n_register_tokens": 4,
+      "register_slice": [
+        1,
+        5
+      ],
+      "patch_slice": [
+        5,
+        201
+      ],
+      "n_patches": 196,
+      "grid_h": 14,
+      "grid_w": 14,
+      "token_order": "[CLS, registers..., patches...]"
+    },
+    "attention_backend": "set via set_attn_implementation (was sdpa)",
+    "checkpoint": "C:\\Users\\darji\\OneDrive\\Desktop\\Multi-Agent-dinov3-explainable-tumor-detection-framework-main\\artifacts\\models\\clf.pth"
+  },
+  "runtime_s": 0.2982630729675293,
+  "warning": null,
+  "extras": {
+    "layer_received_gradients": true
+  }
+}

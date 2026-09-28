@@ -1,0 +1,10 @@
+```json
+{
+  "model_prediction": "no_tumor",
+  "prediction_confidence": 1.00,
+  "explanation_summary": "The model predicts 'no_tumor' with high confidence. The XAI methods used include gradcam, chefer_attribution, integrated_gradients, and occlusion, which provide insights into the model's decision-making process.",
+  "agreement_between_xai_methods": "The agreement between the XAI methods is not explicitly stated.",
+  "important_limitations": "Quantitative localization metrics (Dice/IoU) are not defined for no-tumor images.",
+  "research_use_warning": "This is a model explanation summary, not a clinical report."
+}
+```

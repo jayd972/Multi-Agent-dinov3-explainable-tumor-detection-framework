@@ -1,0 +1,16 @@
+Mode: structured
+
+Structured evidence (validated input):
+- image_id: brisc2025_test_00255_me_ax_t1
+- predicted_class: meningioma_tumor
+- class_probabilities: {'glioma_tumor': 1.25e-06, 'meningioma_tumor': 1.0, 'no_tumor': 5.29e-09, 'pituitary_tumor': 1.53e-06}
+- xai_methods_included: ['gradcam', 'chefer_attribution', 'integrated_gradients', 'occlusion']
+- quantitative_localization_metrics: {'dice': None, 'iou': None, 'note': 'MASK_UNAVAILABLE'}
+- method_descriptions: {'gradcam': 'ViT Grad-CAM on a transformer block after removing CLS and register tokens and reshaping patch tokens to a spatial grid.', 'chefer_attribution': 'Chefer Transformer Attribution (fallback for AttnLRP; HuggingFace DINOv3 does not expose AttnLRP rules).', 'integrated_gradients': 'Integrated Gradients from a chosen baseline; combined map is positive-channel evidence only. Negative evidence is stored separately.', 'occlusion': 'Signed change in target-class probability when a region is masked. Positive = probability decreases when masked (supportive region).'}
+- original_mri_included: False
+- xai_images_included: False
+- xai_image_files: []
+
+true_class is provided only for offline evaluation and must not be used as diagnostic input.
+
+Write the JSON object now. Do not add keys. Do not add medical claims that are not in the evidence.

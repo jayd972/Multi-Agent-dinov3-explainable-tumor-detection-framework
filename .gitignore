@@ -62,14 +62,23 @@ scratch/
 # Test cache
 .pytest_cache/
 
-# Artifacts and generated outputs
-artifacts/
-results_augmented_dinov3/
+# Large image/PDF/binary outputs (too large for git)
+# Allow text-based results (json, csv, txt, md, tex) but exclude images/PDFs/binaries
+artifacts/**/*.png
+artifacts/**/*.jpg
+artifacts/**/*.jpeg
+artifacts/**/*.pdf
+results_augmented_dinov3/**/*.png
+results_augmented_dinov3/**/*.jpg
+results_augmented_dinov3/**/*.pdf
 
-# Large root-level output files
-*.png
-*.pdf
-*.docx
+# Large root-level output files (paper grids etc.)
+comprehensive_qualitative_grid.png
+comprehensive_qualitative_grid_rerun.png
+comprehensive_qualitative_grid_updated.png
+extended_9col_qualitative_grid.png
+final_paper_grid.png
+LucidBrainImagesElsevier.pdf
 Rebuttle.docx
 output.txt
 
@@ -82,4 +91,3 @@ Thumbs.db
 
 # Logs
 *.log
-output.txt

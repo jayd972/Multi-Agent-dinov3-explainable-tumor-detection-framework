@@ -1,0 +1,14 @@
+In this analysis, we have two different heatmaps that help us understand the model's reasoning for predicting a glioma tumor with high confidence.
+
+### 1. Attention Rollout Heatmap
+- **Description**: This heatmap shows areas of the image that the model focused on when making its prediction. The bright red areas indicate regions that contributed most to the decision.
+- **Interpretation**: The presence of bright spots, particularly in the central region of the brain, suggests that the model identified significant features associated with glioma tumors. The model likely recognized patterns or abnormalities in these areas that are characteristic of gliomas.
+
+### 2. Gradient Saliency Heatmap
+- **Description**: This heatmap highlights the parts of the image that had the most influence on the model's output. The red areas indicate strong signals, while the blue areas show less influence.
+- **Interpretation**: Similar to the attention heatmap, the red regions in this heatmap suggest that the model detected important features related to the glioma tumor. The concentration of red in specific areas reinforces the idea that these regions are critical for the diagnosis.
+
+### Summary
+Both visualizations indicate that the model is highly confident in its prediction of a glioma tumor, as shown by the probability score of 1.000. The highlighted areas in both heatmaps suggest that the model is focusing on relevant features in the brain scan that are typical for gliomas, while showing no significant evidence for other types of tumors. 
+
+This analysis is for research purposes and should not be considered a clinical diagnosis. Always consult a medical professional for accurate interpretations and diagnoses.

@@ -1,0 +1,16 @@
+\begin{table}
+\caption{Smoke insertion/deletion AUC (n=4, one image per class). Localization Dice/IoU not computed: MASK_UNAVAILABLE.}
+\label{tab:xai-smoke}
+\begin{tabular}{lrr}
+\toprule
+method & insertion_auc & deletion_auc \\
+\midrule
+attention_rollout & 0.790 & 0.649 \\
+chefer_attribution & 0.848 & 0.598 \\
+gradcam & 0.887 & 0.640 \\
+integrated_gradients & 0.710 & 0.701 \\
+occlusion & 0.907 & 0.667 \\
+vanilla_gradient & 0.637 & 0.547 \\
+\bottomrule
+\end{tabular}
+\end{table}

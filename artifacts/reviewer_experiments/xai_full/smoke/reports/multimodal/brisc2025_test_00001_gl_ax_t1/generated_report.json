@@ -1,0 +1,8 @@
+{
+  "model_prediction": "The classifier predicted glioma_tumor.",
+  "prediction_confidence": "The predicted-class probability is 1.00. All class probabilities: {'glioma_tumor': 1.0, 'meningioma_tumor': 2.96303408475751e-08, 'no_tumor': 7.58989260329912e-11, 'pituitary_tumor': 6.6558847322539805e-09}.",
+  "explanation_summary": "Local XAI methods applied: gradcam, chefer_attribution, integrated_gradients, occlusion. Quantitative metrics supplied: {\"dice\": null, \"iou\": null, \"pointing_game\": null, \"note\": \"MASK_UNAVAILABLE\"}. MASK_UNAVAILABLE Attention rollout, if listed, is not class-specific and is not proof of causality.",
+  "agreement_between_xai_methods": "Agreement is described only from the supplied metrics. No anatomical location is inferred from the heatmaps.",
+  "important_limitations": "Heatmaps are attributions, not segmentations. If dice/iou are null, tumor overlap was not computed. Original MRI included: True. XAI images included: True.",
+  "research_use_warning": "This is a model explanation summary for research use only. It is not a clinical radiology report and has not been evaluated by qualified clinicians."
+}

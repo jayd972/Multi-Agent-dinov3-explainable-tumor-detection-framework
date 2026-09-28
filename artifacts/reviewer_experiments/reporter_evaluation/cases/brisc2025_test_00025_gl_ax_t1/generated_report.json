@@ -1,0 +1,8 @@
+{
+  "model_prediction": "glioma_tumor",
+  "prediction_confidence": 1.0,
+  "explanation_summary": "The model predicts the presence of a glioma tumor with high confidence. The attention rollout method provides a visualization of the model's focus areas, but it is not class-specific and does not serve as proof of causality. The gradient saliency method highlights important features contributing to the prediction.",
+  "agreement_between_xai_methods": "The attention rollout and gradient saliency methods both provide insights into the model's decision-making process, although they utilize different approaches.",
+  "important_limitations": "The quantitative localization metrics indicate that the dice metric was not computed, and the attention rollout is not class-specific.",
+  "research_use_warning": "This is a model explanation summary, not a clinical report."
+}

@@ -1,0 +1,14 @@
+In this analysis, the model predicts "no tumor" with a very high confidence of 100%. Let's break down what the visualizations suggest about the model's reasoning:
+
+### Attention Rollout Heatmap
+- **Description**: This heatmap highlights areas of the image that the model focused on when making its prediction.
+- **Interpretation**: The bright areas (often shown in red or yellow) indicate regions that the model considers important. In this case, the heatmap shows that the model is focusing on parts of the brain that appear normal, supporting the prediction of "no tumor." The absence of significant bright spots in areas typically associated with tumors suggests that there are no abnormal growths detected.
+
+### Gradient Saliency Heatmap
+- **Description**: This heatmap shows how changes in the input image affect the model's output. Areas with higher intensity (often in red) indicate where the model is most sensitive to changes.
+- **Interpretation**: The scattered patterns in this heatmap suggest that the model did not find any strong signals indicating the presence of a tumor. The lack of concentrated red areas further supports the conclusion that there are no tumors present, as it implies that the model did not detect any significant abnormalities.
+
+### Summary
+Both visualizations reinforce the model's prediction of "no tumor." The attention rollout heatmap indicates that the model is focusing on normal brain structures, while the gradient saliency heatmap shows a lack of sensitivity to any potential tumor signals. Overall, the evidence suggests a strong confidence in the absence of tumors in this image. 
+
+This analysis is for research purposes and should not be used as a clinical diagnosis. Always consult a medical professional for health-related concerns.

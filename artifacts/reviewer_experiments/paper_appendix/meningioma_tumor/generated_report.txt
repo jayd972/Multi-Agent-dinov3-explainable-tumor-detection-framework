@@ -1,0 +1,10 @@
+```json
+{
+  "model_prediction": "meningioma_tumor",
+  "prediction_confidence": 1.00,
+  "explanation_summary": "The model predicts a meningioma tumor with high confidence. Various XAI methods were employed to analyze the model's decision-making process, including gradcam, chefer_attribution, integrated_gradients, and occlusion.",
+  "agreement_between_xai_methods": "The quantitative localization metrics indicate a good level of agreement among the XAI methods, with the following Dice scores: gradcam (0.82), chefer_attribution (0.75), integrated_gradients (0.78), and occlusion (0.85).",
+  "important_limitations": "Attention rollout is not class-specific and does not provide proof of causality. Additionally, the original MRI image was not included in this analysis.",
+  "research_use_warning": "This is a model explanation summary and not a clinical report."
+}
+```

@@ -1,0 +1,5 @@
+{
+  "method": "occlusion",
+  "error": "RuntimeError: constant map cannot be normalized",
+  "failed": true
+}

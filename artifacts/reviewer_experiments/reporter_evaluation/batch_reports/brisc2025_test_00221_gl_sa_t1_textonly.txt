@@ -1,0 +1,15 @@
+The model has analyzed the tumor image and predicts that it is a glioma tumor with a very high confidence level of 100%. This means that the model is very certain about this classification.
+
+Here’s a breakdown of the results:
+
+- **Predicted Class: Glioma Tumor (Probability: 1.000)**: The model strongly believes that the tumor in the image is a glioma, which is a type of brain tumor that originates from glial cells.
+
+- **Top Scores**:
+  - **Glioma Tumor: 1.000**: This score indicates complete certainty in the glioma classification.
+  - **Meningioma Tumor: 0.000**: The model is confident that this is not a meningioma, which is another type of brain tumor that arises from the meninges (the protective layers around the brain).
+  - **No Tumor: 0.000**: The model also rules out the possibility of there being no tumor present.
+  - **Pituitary Tumor: 0.000**: Similarly, it is certain that this is not a pituitary tumor, which affects the pituitary gland.
+
+In summary, the model's reasoning suggests that it has identified features in the image that are characteristic of a glioma tumor and has ruled out other types of tumors with high confidence.
+
+**Caution**: This explanation is for research purposes only and should not be considered a clinical diagnosis. Always consult a medical professional for accurate diagnosis and treatment options.

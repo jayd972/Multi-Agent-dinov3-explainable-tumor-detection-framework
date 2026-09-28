@@ -1,0 +1,33 @@
+{
+  "split": "test_10_per_class",
+  "n_images": 40,
+  "mask_status": {
+    "mask_dir": "C:\\Users\\darji\\Downloads\\BT_Images\\segmentation_task\\test\\masks",
+    "available": true,
+    "note": "Official mask directory found."
+  },
+  "threshold": 0.3,
+  "threshold_selected_on": "validation",
+  "normalization_before_threshold": "minmax",
+  "methods": [
+    "gradcam",
+    "chefer_attribution",
+    "integrated_gradients",
+    "occlusion"
+  ],
+  "checkpoint": {
+    "checkpoint_path": "C:\\Users\\darji\\OneDrive\\Desktop\\Multi-Agent-dinov3-explainable-tumor-detection-framework-main\\artifacts\\models\\clf.pth",
+    "checkpoint_sha256": "42c67bbdcc91a7e9cb976e23e2167cac998bd13eff27cceead6bad7cb8492a11",
+    "model_id": "facebook/dinov3-vitb16-pretrain-lvd1689m",
+    "class_names": [
+      "glioma_tumor",
+      "meningioma_tumor",
+      "no_tumor",
+      "pituitary_tumor"
+    ],
+    "device": "cuda",
+    "weights_modified": false,
+    "explanation_autograd_enabled": true
+  },
+  "test_masks_used_for_threshold": false
+}

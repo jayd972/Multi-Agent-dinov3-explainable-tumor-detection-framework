@@ -1,0 +1,15 @@
+The model has analyzed the tumor image and predicts that it is a pituitary tumor with a very high confidence level of 100%. This means that based on the features it identified in the image, the model is certain that the tumor belongs to this category.
+
+Here’s what the scores suggest:
+
+- **Pituitary Tumor: 1.000** - This indicates a strong belief that the tumor is a pituitary tumor. The model found characteristics in the image that match what is typically seen in pituitary tumors.
+  
+- **Glioma Tumor: 0.000** - The model is confident that the tumor is not a glioma, which is another type of brain tumor. A score of 0 means it did not find any features that would suggest this type.
+
+- **Meningioma Tumor: 0.000** - Similarly, the model is certain that this is not a meningioma tumor, as indicated by the score of 0.
+
+- **No Tumor: 0.000** - The model also rules out the possibility that there is no tumor present at all.
+
+In summary, the model's reasoning is based on the specific features it detected in the image, leading it to conclude that the tumor is a pituitary tumor with high confidence. 
+
+**Caution:** This explanation is for research purposes only and should not be considered a clinical diagnosis. Always consult a healthcare professional for medical advice and diagnosis.

@@ -1,0 +1,13 @@
+In this analysis, the model has predicted that the tumor is a meningioma with a very high confidence level of 100% (probability of 1.000). Here’s what the visualizations suggest about the model's reasoning:
+
+1. **Predicted Class - Meningioma Tumor**: The model strongly identifies the tumor as a meningioma, which is a type of tumor that occurs in the membranes covering the brain and spinal cord. The high probability indicates that the features in the image closely match those typically associated with meningiomas.
+
+2. **Top Scores**: 
+   - **Meningioma Tumor: 1.000**: This score confirms the model's strong belief that the tumor is a meningioma. The features detected in the image are consistent with this type of tumor.
+   - **Glioma Tumor: 0.000**: The model is certain that the tumor is not a glioma, which is another type of brain tumor. A score of 0.000 indicates that the characteristics of a glioma were not present in the image.
+   - **No Tumor: 0.000**: The model also rules out the possibility of there being no tumor at all, suggesting that the image clearly shows a tumor.
+   - **Pituitary Tumor: 0.000**: Similarly, the model does not see any features that would suggest a pituitary tumor, which is located at the base of the brain.
+
+Overall, the visualizations indicate that the model has effectively identified specific features in the tumor image that are characteristic of a meningioma, leading to its confident prediction. 
+
+**Caution**: This explanation is for research purposes only and should not be used as a clinical diagnosis. Always consult a qualified healthcare professional for medical advice and diagnosis.

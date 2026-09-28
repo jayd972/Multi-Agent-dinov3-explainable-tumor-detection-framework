@@ -1,0 +1,88 @@
+{
+  "constant_map": {
+    "gradcam": false,
+    "chefer_attribution": false,
+    "integrated_gradients": false
+  },
+  "invalid_values": {
+    "gradcam": false,
+    "chefer_attribution": false,
+    "integrated_gradients": false
+  },
+  "target_class_change": {
+    "gradcam": {
+      "spearman": 0.04907668661090755,
+      "ssim": 0.061804290103492414,
+      "iou": 0.12251655629139073,
+      "topk_overlap": 0.056806856687263305,
+      "maps_changed": true
+    },
+    "chefer_attribution": {
+      "spearman": 0.9012956222666129,
+      "ssim": 0.7834427743293397,
+      "iou": 0.13143798928718584,
+      "topk_overlap": 0.5941797887183576,
+      "maps_changed": true
+    },
+    "integrated_gradients": {
+      "spearman": -0.4197584725263724,
+      "ssim": 0.11873097494016543,
+      "iou": 0.0,
+      "topk_overlap": 0.06976280645804266,
+      "maps_changed": true
+    }
+  },
+  "classifier_head_randomization": {
+    "gradcam": {
+      "spearman": -0.13075279103770626,
+      "ssim": 0.0054529792829359535,
+      "iou": 0.026636285063251355,
+      "topk_overlap": 0.039864460833167234,
+      "failed_sanity": false
+    },
+    "chefer_attribution": {
+      "spearman": 0.9193396620971492,
+      "ssim": 0.7273478574365767,
+      "iou": 0.23782234957020057,
+      "topk_overlap": 0.7382898146302571,
+      "failed_sanity": false
+    }
+  },
+  "progressive_block_randomization": {
+    "block0_gradcam": {
+      "spearman": -0.19064184423667188,
+      "ssim": -0.1352795327670425,
+      "iou": 0.011022893702304786,
+      "topk_overlap": 0.006378313733306757,
+      "failed_sanity": false
+    }
+  },
+  "input_noise_stability": {
+    "gradcam": {
+      "spearman": 0.8595409327829713,
+      "ssim": 0.8173462527597345,
+      "iou": 0.4711869266055046,
+      "topk_overlap": 0.5038867849312338
+    }
+  },
+  "small_intensity_change_stability": {
+    "gradcam": {
+      "spearman": 0.9991973225646452,
+      "ssim": 0.9986114313668605,
+      "iou": 0.9372102480683204,
+      "topk_overlap": 0.9712975882001196
+    }
+  },
+  "reproducibility": {
+    "gradcam": {
+      "spearman": 1.0,
+      "ssim": 0.9999999999554771,
+      "iou": 1.0,
+      "topk_overlap": 1.0
+    }
+  },
+  "multi_seed_stability": {
+    "status": "INSUFFICIENT EVIDENCE",
+    "note": "Only one trained checkpoint is loaded (clf.pth). Cross-seed map stability was not computed."
+  }
+}

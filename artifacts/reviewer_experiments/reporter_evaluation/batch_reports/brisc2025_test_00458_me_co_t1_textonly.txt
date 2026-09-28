@@ -1,0 +1,12 @@
+The model has analyzed the tumor image and predicts that it is a meningioma tumor with a very high confidence level of 100% (probability 1.000). This means that based on the features it detected in the image, the model is certain that the tumor is a meningioma.
+
+Here’s what the top scores suggest:
+
+- **Meningioma Tumor: 1.000** - The model is fully confident that the tumor is a meningioma.
+- **Glioma Tumor: 0.000** - The model sees no evidence of a glioma tumor, indicating that the features associated with gliomas are not present in this image.
+- **No Tumor: 0.000** - The model also rules out the possibility of there being no tumor at all, suggesting that it clearly identifies a tumor in the image.
+- **Pituitary Tumor: 0.000** - Similar to gliomas, the model finds no signs of a pituitary tumor.
+
+In summary, the model's reasoning is based on the specific characteristics it detected in the image, leading it to confidently classify the tumor as a meningioma. 
+
+**Caution:** This analysis is for research and explanation purposes only and should not be considered a clinical diagnosis. Always consult a medical professional for an accurate diagnosis and treatment options.

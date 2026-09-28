@@ -1,0 +1,15 @@
+The model has analyzed the tumor image and predicts that it is a glioma tumor with a very high confidence level of 100%. This means that the model is very certain about its prediction. 
+
+Here’s what the scores suggest:
+
+- **Glioma Tumor: 1.000** - This score indicates that the model is fully confident that the tumor is a glioma. A score of 1.000 means there is no uncertainty in this prediction.
+  
+- **Meningioma Tumor: 0.000** - The score of 0.000 for meningioma means that the model does not believe the tumor is a meningioma at all. There is no evidence in the image to support this type of tumor.
+
+- **No Tumor: 0.000** - Similarly, a score of 0.000 for no tumor indicates that the model is certain that there is a tumor present in the image.
+
+- **Pituitary Tumor: 0.000** - The score for pituitary tumor is also 0.000, meaning the model does not consider this type of tumor as a possibility.
+
+In summary, the model's reasoning strongly supports the conclusion that the tumor in the image is a glioma, with no indication of other types of tumors being present.
+
+**Caution:** This explanation is for research purposes only and should not be used as a clinical diagnosis. Always consult a medical professional for accurate diagnosis and treatment.

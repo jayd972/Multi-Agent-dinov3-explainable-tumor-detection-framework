@@ -1,0 +1,16 @@
+Mode: multimodal
+
+Structured evidence (validated input):
+- image_id: brisc2025_test_00701_pi_ax_t1
+- predicted_class: pituitary_tumor
+- class_probabilities: {'glioma_tumor': 2.78362499717133e-10, 'meningioma_tumor': 2.6307075131626334e-06, 'no_tumor': 3.8095842452845474e-11, 'pituitary_tumor': 0.9999973773956299}
+- xai_methods_included: ['gradcam', 'chefer_attribution', 'integrated_gradients', 'occlusion']
+- quantitative_localization_metrics: {'dice': None, 'iou': None, 'pointing_game': None, 'note': 'MASK_UNAVAILABLE'}
+- method_descriptions: {'gradcam': 'ViT Grad-CAM on a transformer block after removing CLS and register tokens and reshaping patch tokens to a spatial grid.', 'chefer_attribution': 'Chefer Transformer Attribution (fallback for AttnLRP; HuggingFace DINOv3 does not expose AttnLRP rules).', 'integrated_gradients': 'Integrated Gradients from a chosen baseline; combined map is positive-channel evidence only. Negative evidence is stored separately.', 'occlusion': 'Signed change in target-class probability when a region is masked. Positive = probability decreases when masked (supportive region).'}
+- original_mri_included: True
+- xai_images_included: True
+- xai_image_files: ['gradcam', 'chefer_attribution', 'integrated_gradients', 'occlusion']
+
+true_class (evaluation only, do not treat as a diagnostic input): pituitary
+
+Write the JSON object now. Do not add keys. Do not add medical claims that are not in the evidence.

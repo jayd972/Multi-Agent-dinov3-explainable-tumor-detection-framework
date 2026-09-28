@@ -1,0 +1,162 @@
+[
+  {
+    "class": "glioma",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\glioma\\brisc2025_test_00001_gl_ax_t1.jpg"
+  },
+  {
+    "class": "glioma",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\glioma\\brisc2025_test_00002_gl_ax_t1.jpg"
+  },
+  {
+    "class": "glioma",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\glioma\\brisc2025_test_00003_gl_ax_t1.jpg"
+  },
+  {
+    "class": "glioma",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\glioma\\brisc2025_test_00004_gl_ax_t1.jpg"
+  },
+  {
+    "class": "glioma",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\glioma\\brisc2025_test_00005_gl_ax_t1.jpg"
+  },
+  {
+    "class": "glioma",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\glioma\\brisc2025_test_00006_gl_ax_t1.jpg"
+  },
+  {
+    "class": "glioma",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\glioma\\brisc2025_test_00007_gl_ax_t1.jpg"
+  },
+  {
+    "class": "glioma",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\glioma\\brisc2025_test_00008_gl_ax_t1.jpg"
+  },
+  {
+    "class": "glioma",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\glioma\\brisc2025_test_00009_gl_ax_t1.jpg"
+  },
+  {
+    "class": "glioma",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\glioma\\brisc2025_test_00010_gl_ax_t1.jpg"
+  },
+  {
+    "class": "meningioma",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\meningioma\\brisc2025_test_00255_me_ax_t1.jpg"
+  },
+  {
+    "class": "meningioma",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\meningioma\\brisc2025_test_00256_me_ax_t1.jpg"
+  },
+  {
+    "class": "meningioma",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\meningioma\\brisc2025_test_00257_me_ax_t1.jpg"
+  },
+  {
+    "class": "meningioma",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\meningioma\\brisc2025_test_00258_me_ax_t1.jpg"
+  },
+  {
+    "class": "meningioma",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\meningioma\\brisc2025_test_00259_me_ax_t1.jpg"
+  },
+  {
+    "class": "meningioma",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\meningioma\\brisc2025_test_00260_me_ax_t1.jpg"
+  },
+  {
+    "class": "meningioma",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\meningioma\\brisc2025_test_00261_me_ax_t1.jpg"
+  },
+  {
+    "class": "meningioma",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\meningioma\\brisc2025_test_00262_me_ax_t1.jpg"
+  },
+  {
+    "class": "meningioma",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\meningioma\\brisc2025_test_00263_me_ax_t1.jpg"
+  },
+  {
+    "class": "meningioma",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\meningioma\\brisc2025_test_00264_me_ax_t1.jpg"
+  },
+  {
+    "class": "pituitary",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\pituitary\\brisc2025_test_00701_pi_ax_t1.jpg"
+  },
+  {
+    "class": "pituitary",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\pituitary\\brisc2025_test_00702_pi_ax_t1.jpg"
+  },
+  {
+    "class": "pituitary",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\pituitary\\brisc2025_test_00703_pi_ax_t1.jpg"
+  },
+  {
+    "class": "pituitary",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\pituitary\\brisc2025_test_00704_pi_ax_t1.jpg"
+  },
+  {
+    "class": "pituitary",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\pituitary\\brisc2025_test_00705_pi_ax_t1.jpg"
+  },
+  {
+    "class": "pituitary",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\pituitary\\brisc2025_test_00706_pi_ax_t1.jpg"
+  },
+  {
+    "class": "pituitary",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\pituitary\\brisc2025_test_00707_pi_ax_t1.jpg"
+  },
+  {
+    "class": "pituitary",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\pituitary\\brisc2025_test_00708_pi_ax_t1.jpg"
+  },
+  {
+    "class": "pituitary",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\pituitary\\brisc2025_test_00709_pi_ax_t1.jpg"
+  },
+  {
+    "class": "pituitary",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\pituitary\\brisc2025_test_00710_pi_ax_t1.jpg"
+  },
+  {
+    "class": "no_tumor",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\no_tumor\\brisc2025_test_00561_no_ax_t1.jpg"
+  },
+  {
+    "class": "no_tumor",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\no_tumor\\brisc2025_test_00562_no_ax_t1.jpg"
+  },
+  {
+    "class": "no_tumor",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\no_tumor\\brisc2025_test_00563_no_ax_t1.jpg"
+  },
+  {
+    "class": "no_tumor",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\no_tumor\\brisc2025_test_00564_no_ax_t1.jpg"
+  },
+  {
+    "class": "no_tumor",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\no_tumor\\brisc2025_test_00565_no_ax_t1.jpg"
+  },
+  {
+    "class": "no_tumor",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\no_tumor\\brisc2025_test_00566_no_ax_t1.jpg"
+  },
+  {
+    "class": "no_tumor",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\no_tumor\\brisc2025_test_00567_no_ax_t1.jpg"
+  },
+  {
+    "class": "no_tumor",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\no_tumor\\brisc2025_test_00568_no_ax_t1.jpg"
+  },
+  {
+    "class": "no_tumor",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\no_tumor\\brisc2025_test_00569_no_ax_t1.jpg"
+  },
+  {
+    "class": "no_tumor",
+    "path": "C:\\Users\\darji\\Downloads\\BT_Images\\Testing\\no_tumor\\brisc2025_test_00570_no_ax_t1.jpg"
+  }
+]

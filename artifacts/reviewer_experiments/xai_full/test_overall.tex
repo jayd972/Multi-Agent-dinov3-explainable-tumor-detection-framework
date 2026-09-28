@@ -1,0 +1,22 @@
+\begin{table}
+\caption{XAI metrics on test (threshold frozen from validation).}
+\label{tab:xai-test}
+\begin{tabular}{llrrrrrrrrr}
+\toprule
+method & subset & n & dice_mean & iou_mean & pointing_game_mean & mass_inside_mean & mass_outside_mean & deletion_auc_mean & insertion_auc_mean & tumor_region_confidence_drop_mean \\
+\midrule
+chefer_attribution & all & 1000 & 0.361 & 0.261 & 0.584 & 0.101 & 0.899 & 0.519 & 0.875 & 0.144 \\
+chefer_attribution & correct_tumor & 853 & 0.361 & 0.261 & 0.583 & 0.101 & 0.899 & 0.482 & 0.864 & 0.143 \\
+chefer_attribution & incorrect_tumor & 7 & 0.377 & 0.256 & 0.714 & 0.061 & 0.939 & 0.368 & 0.792 & 0.242 \\
+gradcam & all & 1000 & 0.026 & 0.014 & 0.043 & 0.017 & 0.983 & 0.646 & 0.826 & 0.144 \\
+gradcam & correct_tumor & 853 & 0.026 & 0.014 & 0.043 & 0.017 & 0.983 & 0.623 & 0.811 & 0.143 \\
+gradcam & incorrect_tumor & 7 & 0.012 & 0.006 & 0.000 & 0.009 & 0.991 & 0.443 & 0.639 & 0.242 \\
+integrated_gradients & all & 1000 & 0.034 & 0.018 & 0.205 & 0.046 & 0.954 & 0.629 & 0.687 & 0.144 \\
+integrated_gradients & correct_tumor & 853 & 0.034 & 0.018 & 0.200 & 0.046 & 0.954 & 0.619 & 0.700 & 0.143 \\
+integrated_gradients & incorrect_tumor & 7 & 0.055 & 0.029 & 0.714 & 0.030 & 0.970 & 0.362 & 0.459 & 0.242 \\
+occlusion & all & 1000 & 0.201 & 0.134 & 0.369 & 0.170 & 0.830 & 0.592 & 0.872 & 0.147 \\
+occlusion & correct_tumor & 853 & 0.202 & 0.134 & 0.370 & 0.171 & 0.829 & 0.567 & 0.858 & 0.146 \\
+occlusion & incorrect_tumor & 7 & 0.173 & 0.108 & 0.286 & 0.044 & 0.956 & 0.372 & 0.717 & 0.242 \\
+\bottomrule
+\end{tabular}
+\end{table}

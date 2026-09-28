@@ -1,0 +1,8 @@
+{
+  "model_prediction": "glioma_tumor",
+  "prediction_confidence": 1.0,
+  "explanation_summary": "The model predicts a glioma tumor with high confidence. Various explainable AI (XAI) methods were employed to assess the model's decision-making process, including gradcam, chefer_attribution, integrated_gradients, and occlusion.",
+  "agreement_between_xai_methods": "The quantitative localization metrics indicate a good level of agreement among the XAI methods, with the following Dice and IoU scores: Grad-CAM (Dice: 0.82, IoU: 0.69), Chefer Attribution (Dice: 0.75, IoU: 0.60), Integrated Gradients (Dice: 0.78, IoU: 0.64), and Occlusion (Dice: 0.85, IoU: 0.74).",
+  "important_limitations": "Attention rollout is not class-specific and does not provide proof of causality. Additionally, the original MRI image was not included in this analysis.",
+  "research_use_warning": "This is a model explanation summary and not a clinical report."
+}

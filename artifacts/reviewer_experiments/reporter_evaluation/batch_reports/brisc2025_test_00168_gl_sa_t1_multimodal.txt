@@ -1,0 +1,18 @@
+Based on the analysis of the tumor images, here’s a plain language explanation of what the visualizations suggest:
+
+### Predicted Class
+- **Glioma Tumor**: The model predicts a glioma tumor with a very high confidence level (probability of 1.000). This means it is very certain about this diagnosis.
+- **Other Classes**: The model shows no probability for meningioma, no tumor, or pituitary tumor, indicating that these were not considered likely based on the data.
+
+### Attention Rollout Heatmap
+- **Visual Insights**: The heatmap highlights areas of the brain where the model focused its attention when making the prediction. The red areas indicate regions that are significant for identifying a glioma tumor.
+- **Interpretation**: The presence of multiple highlighted spots suggests that the model detected features typical of gliomas in those regions. This reinforces the prediction of a glioma tumor.
+
+### Gradient Saliency Heatmap
+- **Visual Insights**: This heatmap shows where the model found the most important features in the image. The bright red areas indicate strong signals that contributed to the prediction.
+- **Interpretation**: The widespread red areas, especially in the upper part of the brain, suggest that there are significant abnormalities consistent with glioma characteristics. This further supports the model's prediction.
+
+### Summary
+Both visualizations indicate that the model is confident in diagnosing a glioma tumor, focusing on specific areas of the brain that exhibit features typical of this type of tumor. The high probability and the highlighted regions in both heatmaps align with the prediction, suggesting a strong basis for the diagnosis. 
+
+This analysis is for research purposes and should not be considered a clinical diagnosis. Always consult a healthcare professional for medical advice.

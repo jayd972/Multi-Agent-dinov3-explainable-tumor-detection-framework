@@ -1,0 +1,16 @@
+Mode: multimodal
+
+Structured evidence (validated input):
+- image_id: brisc2025_test_00693_no_sa_t1
+- predicted_class: no_tumor
+- class_probabilities: {'no_tumor': 1.0}
+- xai_methods_included: ['attention_rollout', 'gradient_saliency']
+- quantitative_localization_metrics: {'dice': None, 'note': 'MASK_UNAVAILABLE'}
+- method_descriptions: {'attention_rollout': 'Abnar-Zuidema attention rollout with residual identity and row normalization. NOT class-specific. NOT causal proof.', 'gradient_saliency': 'gradient_saliency'}
+- original_mri_included: True
+- xai_images_included: True
+- xai_image_files: ['attention_rollout', 'gradient_saliency']
+
+true_class (evaluation only, do not treat as a diagnostic input): no_tumor
+
+Write the JSON object now. Do not add keys. Do not add medical claims that are not in the evidence.

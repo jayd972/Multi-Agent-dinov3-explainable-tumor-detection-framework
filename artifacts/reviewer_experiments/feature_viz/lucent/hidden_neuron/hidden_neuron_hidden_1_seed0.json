@@ -1,0 +1,25 @@
+{
+  "method": "lucent_style_feature_visualization",
+  "mode": "hidden_neuron",
+  "exact_target_layer": "classifier[0] Linear 768->256",
+  "exact_target_neuron_or_channel": "hidden classifier.0 channel 1",
+  "hidden_vs_class": "hidden layer",
+  "optimization_objective": "maximize hidden classifier.0 channel 1 minus TV, FFT parameterization",
+  "optimization_steps": 16,
+  "learning_rate": 0.05,
+  "regularization": [
+    "total_variation",
+    "unit-std rescale",
+    "spatial jitter",
+    "clamp_0_1"
+  ],
+  "image_parameterization": "FFT spectral coefficients (real/imag), inverse FFT to RGB",
+  "random_seed": 0,
+  "input_initialization": "small random FFT spectrum, NOT a real MRI",
+  "final_activation_value": 9.916033744812012,
+  "class_represented": null,
+  "runtime_s": 0.9289040565490723,
+  "output": "C:\\Users\\darji\\OneDrive\\Desktop\\Multi-Agent-dinov3-explainable-tumor-detection-framework-main\\artifacts\\reviewer_experiments\\feature_viz\\lucent\\hidden_neuron\\hidden_neuron_hidden_1_seed0.png",
+  "checkpoint": "C:\\Users\\darji\\OneDrive\\Desktop\\Multi-Agent-dinov3-explainable-tumor-detection-framework-main\\artifacts\\models\\clf.pth",
+  "limitation": "Synthetic visualization. Blur/abstraction is expected from FFT parameterization and MRI-domain shift. Do not interpret patterns as confirmed medical features. Hidden-neuron images are not class images."
+}

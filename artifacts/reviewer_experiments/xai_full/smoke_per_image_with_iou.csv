@@ -1,0 +1,17 @@
+image_id,true_label,predicted,method,mask_available,dice,iou,pointing_game,mass_inside
+brisc2025_test_00001_gl_ax_t1,glioma,glioma_tumor,gradcam,True,0.020816780549817258,0.010517864311521477,0.0,0.009242414517456008
+brisc2025_test_00001_gl_ax_t1,glioma,glioma_tumor,chefer_attribution,True,0.24425887265135698,0.13912009512485138,1.0,0.024781242841344166
+brisc2025_test_00001_gl_ax_t1,glioma,glioma_tumor,integrated_gradients,True,0.0,0.0,0.0,0.002380031885868685
+brisc2025_test_00001_gl_ax_t1,glioma,glioma_tumor,occlusion,True,0.0,0.0,0.0,0.0002436076807553102
+brisc2025_test_00255_me_ax_t1,meningioma,meningioma_tumor,gradcam,True,0.0,0.0,0.0,0.003689661965928121
+brisc2025_test_00255_me_ax_t1,meningioma,meningioma_tumor,chefer_attribution,True,0.3429147755925366,0.20693852708460134,0.0,0.13483665086521818
+brisc2025_test_00255_me_ax_t1,meningioma,meningioma_tumor,integrated_gradients,True,0.018090452261306532,0.009127789046653144,1.0,0.08257455347291275
+brisc2025_test_00255_me_ax_t1,meningioma,meningioma_tumor,occlusion,True,0.47255002565418164,0.309371850856567,1.0,0.32472515793912704
+brisc2025_test_00561_no_ax_t1,no_tumor,no_tumor,gradcam,False,,,,
+brisc2025_test_00561_no_ax_t1,no_tumor,no_tumor,chefer_attribution,False,,,,
+brisc2025_test_00561_no_ax_t1,no_tumor,no_tumor,integrated_gradients,False,,,,
+brisc2025_test_00561_no_ax_t1,no_tumor,no_tumor,occlusion,False,,,,
+brisc2025_test_00701_pi_ax_t1,pituitary,pituitary_tumor,gradcam,True,0.0,0.0,0.0,0.0
+brisc2025_test_00701_pi_ax_t1,pituitary,pituitary_tumor,chefer_attribution,True,0.007207655026718032,0.0036168620603641804,0.0,0.011573778277122951
+brisc2025_test_00701_pi_ax_t1,pituitary,pituitary_tumor,integrated_gradients,True,0.0,0.0,0.0,0.003802775374451952
+brisc2025_test_00701_pi_ax_t1,pituitary,pituitary_tumor,occlusion,True,0.0,0.0,0.0,0.04182339666569972

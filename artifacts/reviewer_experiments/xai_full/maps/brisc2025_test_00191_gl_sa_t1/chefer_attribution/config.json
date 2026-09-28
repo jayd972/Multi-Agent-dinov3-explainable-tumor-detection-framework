@@ -1,0 +1,49 @@
+{
+  "method": "chefer_attribution",
+  "algorithm": "Chefer Transformer Attribution (fallback for AttnLRP)",
+  "target_class": 0,
+  "predicted_class": 0,
+  "class_probabilities": [
+    1.0,
+    2.929579467902954e-09,
+    1.3171236323827884e-10,
+    1.2128665849431286e-09
+  ],
+  "input_hw": [
+    224,
+    224
+  ],
+  "attribution_hw": [
+    224,
+    224
+  ],
+  "config": {
+    "method": "chefer_attribution",
+    "algorithm": "Chefer Transformer Attribution (fallback for AttnLRP)",
+    "attnlrp_status": "NOT IMPLEMENTED",
+    "fallback": "chefer_attribution",
+    "fallback_reason": "Exact AttnLRP is not implemented because facebook/dinov3-vitb16-pretrain-lvd1689m is loaded through HuggingFace transformers with fused attention and standard LayerNorm/MLP modules. Those layers do not provide the relevance-conservation rules AttnLRP requires. Chefer Transformer Attribution is used as the named fallback.",
+    "token_layout": {
+      "n_tokens": 201,
+      "cls_index": 0,
+      "n_register_tokens": 4,
+      "register_slice": [
+        1,
+        5
+      ],
+      "patch_slice": [
+        5,
+        201
+      ],
+      "n_patches": 196,
+      "grid_h": 14,
+      "grid_w": 14,
+      "token_order": "[CLS, registers..., patches...]"
+    },
+    "attention_backend": "set via set_attn_implementation (was eager)",
+    "checkpoint": "C:\\Users\\darji\\OneDrive\\Desktop\\Multi-Agent-dinov3-explainable-tumor-detection-framework-main\\artifacts\\models\\clf.pth"
+  },
+  "runtime_s": 0.08762979507446289,
+  "warning": "AttnLRP unavailable; Chefer Transformer Attribution used.",
+  "extras": {}
+}

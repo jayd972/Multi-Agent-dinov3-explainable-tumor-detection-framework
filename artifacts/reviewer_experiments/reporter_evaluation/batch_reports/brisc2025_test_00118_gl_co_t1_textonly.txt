@@ -1,0 +1,15 @@
+Based on the information provided, the model has predicted that the tumor is a glioma with a very high probability of 99.9%. This means that the model is very confident in its prediction. 
+
+Here’s what each part of the prediction suggests:
+
+1. **Predicted Class: Glioma Tumor (Probability 0.999)** - The model strongly believes that the tumor is a glioma. This is supported by the high probability score, indicating that the features it analyzed match those typically associated with gliomas.
+
+2. **Top Scores**:
+   - **Glioma Tumor: 0.999** - This score reinforces the model's confidence in the glioma diagnosis. It suggests that the characteristics of the tumor image align closely with what is known about gliomas.
+   - **Meningioma Tumor: 0.000** - The model has assigned a score of 0.000 to meningiomas, indicating that it found no evidence in the image to suggest this type of tumor.
+   - **No Tumor: 0.000** - Similarly, the model is certain that there is a tumor present, as it gives a score of 0.000 for the absence of a tumor.
+   - **Pituitary Tumor: 0.000** - The model also found no features that would indicate a pituitary tumor, resulting in a score of 0.000.
+
+In summary, the model's reasoning suggests that the tumor is most likely a glioma, with no indication of other types of tumors based on the image analyzed.
+
+**Caution**: This explanation is for research purposes only and should not be considered a clinical diagnosis. Always consult a qualified healthcare professional for medical advice and diagnosis.

@@ -1,0 +1,15 @@
+Here is what each picture suggests about how the model reached its answer (predicted **pituitary_tumor**, probability **0.980**).
+
+- **Attention rollout:** The model is looking most strongly (bright red/orange) at the upper‑central, midline part of the slice, with a few smaller secondary spots off to the sides. The main hotspot sits in the central/anterior midline area, which is the region where a pituitary/suprasellar lesion would be expected. So the attention map is pointing at a plausible pituitary location rather than at the cortex or background.
+
+- **Gradient saliency:** This map is much noisier and more spread out, with scattered patches across the whole image and one stronger patch in the right‑central area. In plain terms, the gradient signal is less focused and partly picks up edges/textures, so on its own it is weaker evidence than the attention map. It does not contradict the midline focus, but it is not as clean.
+
+- **DeepDream:** This is a stylized, texture‑amplified view of the same slice. It mainly highlights the central brain structures and is useful for seeing what the network "sees" as salient texture, but it is not a precise localization tool.
+
+- **Probability chart:** The bar for pituitary_tumor is essentially at 1.0 while meningioma, glioma and no_tumor are near zero. This shows the model is very confident and not torn between classes.
+
+- **Occlusion map:** The most important region (yellow/orange) forms a vertical band along the central midline, running from the upper‑central area downward. This agrees with the attention map's midline hotspot and is consistent with a pituitary/suprasellar region being the key evidence for the prediction.
+
+**Overall read:** The two cleaner maps (attention and occlusion) agree on a central midline / suprasellar region, which matches a pituitary tumor, and the probability is high. The gradient saliency is noisier and more diffuse, so the localization evidence is moderate rather than perfect.
+
+*Caution: these are research/interpretability visualizations explaining the model's reasoning, not a clinical diagnosis. A real diagnosis needs a radiologist reviewing the full study.*

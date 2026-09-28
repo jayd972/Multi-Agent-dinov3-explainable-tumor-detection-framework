@@ -1,0 +1,8 @@
+{
+  "model_prediction": "glioma_tumor",
+  "prediction_confidence": "1.00",
+  "explanation_summary": "The model classified the input image as glioma_tumor with a high confidence probability. Four XAI attribution maps were generated to explain this prediction: gradcam, chefer_attribution, integrated_gradients, and occlusion. gradcam shows coarse activation maps derived from transformer patch tokens; chefer_attribution highlights layer-wise attribution; integrated_gradients highlights positive feature attribution relative to a baseline; and occlusion identifies regions where masking decreases the target-class probability.",
+  "agreement_between_xai_methods": "The XAI maps show spatial alignment across methods. Both gradcam and chefer_attribution focus key attribution intensity in the central and lower-central regions of the image array. The occlusion map confirms supportive target evidence in the lower-central region, matching high point-wise attributions observed in integrated_gradients.",
+  "important_limitations": "Quantitative localization metrics (Dice and IoU) were not computed because the ground-truth mask is marked as MASK_UNAVAILABLE. The standalone original MRI image was not provided. Visual attributions reflect model feature usage only and do not constitute proof of clinical causality or anatomical boundaries.",
+  "research_use_warning": "This output is a model explanation summary generated for research evaluation only. It is NOT a clinical radiology report and has NOT been evaluated by qualified medical professionals. It must not be used for diagnosis, prognosis, or clinical decision-making."
+}

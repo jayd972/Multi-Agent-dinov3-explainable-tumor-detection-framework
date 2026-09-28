@@ -1,0 +1,10 @@
+```json
+{
+  "model_prediction": "no_tumor",
+  "prediction_confidence": 0.9999992847442628,
+  "explanation_summary": "The model predicts 'no_tumor' with high confidence. The attention rollout method provides a non-class-specific visualization, while gradient saliency highlights areas of interest in the MRI.",
+  "agreement_between_xai_methods": "The attention rollout is not class-specific and does not provide proof of causality.",
+  "important_limitations": "Quantitative localization metrics were not computed.",
+  "research_use_warning": "This is a model explanation summary, not a clinical report."
+}
+```

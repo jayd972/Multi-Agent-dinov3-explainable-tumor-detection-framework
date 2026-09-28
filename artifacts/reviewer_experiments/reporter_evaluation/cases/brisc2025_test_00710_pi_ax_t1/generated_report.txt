@@ -1,0 +1,10 @@
+```json
+{
+  "model_prediction": "pituitary_tumor",
+  "prediction_confidence": 0.99972,
+  "explanation_summary": "The model predicts a pituitary tumor with high confidence based on the provided MRI data. The attention rollout method indicates areas of focus, but it is not class-specific and does not provide proof of causality. The gradient saliency method also contributes to understanding the model's decision.",
+  "agreement_between_xai_methods": "The attention rollout and gradient saliency methods provide complementary insights into the model's predictions.",
+  "important_limitations": "The quantitative localization metrics were not computed, and the attention rollout is not class-specific.",
+  "research_use_warning": "This is a model explanation summary, not a clinical report."
+}
+```

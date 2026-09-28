@@ -1,0 +1,14 @@
+The model predicts a meningioma tumor with a very high probability of 0.998, indicating strong confidence in this diagnosis. Here’s a breakdown of what the visualizations suggest:
+
+### Attention Rollout Heatmap
+- **Description**: This heatmap highlights areas of the image that the model focused on when making its prediction.
+- **Interpretation**: The bright red area in the center suggests that the model identified a significant region in the brain that corresponds to the meningioma. The surrounding areas, which are less bright, indicate that the model considered them less relevant for this diagnosis.
+
+### Gradient Saliency Heatmap
+- **Description**: This heatmap shows which parts of the image contributed most to the model's decision, with brighter areas indicating higher importance.
+- **Interpretation**: Similar to the attention heatmap, the red region indicates the area where the model detected features consistent with a meningioma. The scattered colors elsewhere suggest that other parts of the image were less influential in the decision-making process.
+
+### Summary
+Both visualizations support the model's prediction of a meningioma tumor. The strong focus on a specific area in the brain suggests that the model has identified characteristics typical of this type of tumor. The very low probabilities for glioma, no tumor, and pituitary tumor indicate that the model found little evidence to support these other diagnoses.
+
+This analysis is for research purposes and should not be considered a clinical diagnosis. Always consult a medical professional for an accurate diagnosis and treatment options.

@@ -1,0 +1,32 @@
+{
+  "method": "vanilla_gradient",
+  "algorithm": "vanilla input-gradient",
+  "target_class": 3,
+  "predicted_class": 3,
+  "class_probabilities": [
+    2.78362499717133e-10,
+    2.6307075131626334e-06,
+    3.8095842452845474e-11,
+    0.9999973773956299
+  ],
+  "input_hw": [
+    224,
+    224
+  ],
+  "attribution_hw": [
+    224,
+    224
+  ],
+  "config": {
+    "method": "vanilla_gradient",
+    "algorithm": "vanilla input-gradient",
+    "smooth_samples": 1,
+    "noise_sigma": 0.0,
+    "role": "supplementary baseline",
+    "not_a_second_major_method": true,
+    "checkpoint": "C:\\Users\\darji\\OneDrive\\Desktop\\Multi-Agent-dinov3-explainable-tumor-detection-framework-main\\artifacts\\models\\clf.pth"
+  },
+  "runtime_s": 0.06276369094848633,
+  "warning": "Supplementary input-gradient baseline, not a second major XAI method.",
+  "extras": {}
+}

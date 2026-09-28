@@ -1,0 +1,29 @@
+{
+  "method": "deep_dream",
+  "role": "global feature visualization, NOT a patient-specific explanation",
+  "target_layer": "classifier_logit",
+  "target_channel_or_neuron": "class_logit[0] = glioma_tumor",
+  "hidden_vs_class": "final class output",
+  "objective": "maximize classifier logit 0 minus TV",
+  "optimization_steps": 8,
+  "steps_per_octave": 8,
+  "learning_rate": 0.08,
+  "regularization": [
+    "total_variation",
+    "gradient_clip_0.8",
+    "periodic_avg_pool_blur",
+    "output_clamp_0_1",
+    "jitter_4"
+  ],
+  "image_parameterization": "pixel RGB in [0,1] starting from a real MRI",
+  "octaves": 1,
+  "octave_scale": 1.3,
+  "random_seed": 0,
+  "input_initialization": "real MRI resized to 224 (then optimized)",
+  "final_activation_value": 28.509132385253906,
+  "class_represented": "glioma_tumor",
+  "runtime_s": 0.5530869960784912,
+  "output": "C:\\Users\\darji\\OneDrive\\Desktop\\Multi-Agent-dinov3-explainable-tumor-detection-framework-main\\artifacts\\reviewer_experiments\\feature_viz\\deepdream\\class0_glioma_tumor_seed0.png",
+  "checkpoint": "C:\\Users\\darji\\OneDrive\\Desktop\\Multi-Agent-dinov3-explainable-tumor-detection-framework-main\\artifacts\\models\\clf.pth",
+  "limitation": "Blurred/abstract patterns are expected. Deep Dream is a global feature analysis method. Do not treat the output as a localization map or as confirmed medical anatomy."
+}

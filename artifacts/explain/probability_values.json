@@ -1,0 +1,46 @@
+{
+  "glioma": {
+    "probabilities": {
+      "glioma_tumor": 0.9984915256500244,
+      "meningioma_tumor": 0.0008509002509526908,
+      "no_tumor": 0.0005857955547980964,
+      "pituitary_tumor": 7.182460103649646e-05
+    },
+    "max_probability": 0.9984915256500244,
+    "predicted_class": "glioma_tumor",
+    "entropy": 0.012567639350891113
+  },
+  "pituitary": {
+    "probabilities": {
+      "glioma_tumor": 9.55342038650997e-05,
+      "meningioma_tumor": 0.00894167460501194,
+      "no_tumor": 0.000347465364029631,
+      "pituitary_tumor": 0.9906153678894043
+    },
+    "max_probability": 0.9906153678894043,
+    "predicted_class": "pituitary_tumor",
+    "entropy": 0.05517040193080902
+  },
+  "meningioma": {
+    "probabilities": {
+      "glioma_tumor": 0.1448562741279602,
+      "meningioma_tumor": 0.8536519408226013,
+      "no_tumor": 0.0007948343991301954,
+      "pituitary_tumor": 0.0006970204412937164
+    },
+    "max_probability": 0.8536519408226013,
+    "predicted_class": "meningioma_tumor",
+    "entropy": 0.4256784915924072
+  },
+  "no_tumor": {
+    "probabilities": {
+      "glioma_tumor": 9.818773833103478e-05,
+      "meningioma_tumor": 0.00012591526319738477,
+      "no_tumor": 0.999699592590332,
+      "pituitary_tumor": 7.638151873834431e-05
+    },
+    "max_probability": 0.999699592590332,
+    "predicted_class": "no_tumor",
+    "entropy": 0.0030612859409302473
+  }
+}

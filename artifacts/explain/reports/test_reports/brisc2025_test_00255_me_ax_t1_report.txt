@@ -1,0 +1,21 @@
+Below is a plain‑language read of what each picture is telling us about *how* the model arrived at "meningioma_tumor" (0.920). Think of these as different ways of asking the model "where were you looking and what mattered?" They are not a second opinion on the patient — they are a window into the model's reasoning.
+
+**Attention rollout**
+This overlay shows where the model's "gaze" is concentrated. The brightest, most intense spot is a rounded mass on the side of the brain (the lateral/convexity area, shown on the right of the image). A smaller ring‑shaped hotspot sits near the midline, and a few faint specks are scattered elsewhere. The key point is that the *dominant* attention is on that side mass, not on the deep brain or the center. A well‑defined, side‑located region is the kind of pattern a model tends to associate with an extra‑axial (outside‑the‑brain‑tissue) lesion such as a meningioma, rather than a tumor growing from within the brain.
+
+**Gradient saliency**
+This is a noisier, more "grainy" map of which pixels most push the prediction up or down. Despite the noise, the strongest red/orange cluster again lines up with that same side mass, with only minor signal in the midline and a small spot lower down. The fact that two different methods (attention and gradients) light up the *same* region is reassuring: the model's decision is anchored to one consistent area instead of being spread randomly.
+
+**DeepDream**
+This image amplifies the textures and edges the network finds "interesting," so it looks distorted and colorful. It is the *least* specific of the five: it highlights broad swaths of tissue rather than one clean spot. Read it as "the model is also responding to general texture/edge patterns in the brain," not as a precise localization. On its own it would not be trusted to point at a tumor; it mainly confirms the network is reacting to image structure in the region of interest.
+
+**Probability bar chart**
+This simply shows the final confidence: the meningioma bar is essentially full, while glioma, no_tumor, and pituitary are all near zero. In plain terms, the model is not "split" between options — it strongly favors one class and largely rules out the others. The low "no_tumor" score means it is confident *something* abnormal is present, and the low glioma/pituitary scores mean the shape/location it sees does not look like an infiltrative brain tumor or a sellar (pituitary) lesion.
+
+**Occlusion map**
+Here the image is covered in a grid, and each square is colored by how much the prediction *changes* when that square is hidden. The single red square (the one whose hiding most hurts the meningioma score) sits right on that same side mass; the surrounding squares are green/blue (little effect). This is a strong consistency check: if you cover up that one region, the model's meningioma confidence drops, which means the decision genuinely depends on that region rather than on background or unrelated areas.
+
+**Putting it together**
+Four of the five views (attention, gradients, occlusion, and the confident single‑class bar) converge on the same focal, side‑located region, and the model treats it as a discrete mass rather than diffuse infiltration. That pattern of reasoning — a circumscribed, extra‑axial‑looking lesion with high confidence and low scores for glioma/pituitary/no_tumor — is what the model is using to argue for meningioma. The DeepDream view is the weakest and should be read only as "the network also notices texture here," not as independent evidence.
+
+**Caution:** This is a research‑level explanation of *model behavior* only. These maps show where the algorithm looked; they do not confirm a diagnosis, and a model can sometimes latch onto artifacts, scan‑type cues, or spurious patterns. The clinical interpretation of any brain image must be made by a qualified radiologist/physician using the full imaging study and patient context. This summary is not a medical diagnosis.

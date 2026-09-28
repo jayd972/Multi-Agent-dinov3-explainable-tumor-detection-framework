@@ -1,0 +1,14 @@
+In the analysis of the tumor images, the model predicts a "pituitary tumor" with a very high confidence level of 100%. Here’s what each visualization suggests about the model's reasoning:
+
+### Attention Rollout Heatmap
+- **Description**: This heatmap highlights areas of the image that the model considers important for its prediction.
+- **Interpretation**: The bright spots in the heatmap indicate regions where the model is focusing its attention. In this case, the areas around the pituitary gland are likely highlighted, suggesting that the model has identified features consistent with a pituitary tumor. The surrounding areas may also show some attention, but the concentration is primarily around the expected location of the tumor.
+
+### Gradient Saliency Heatmap
+- **Description**: This heatmap shows how changes in the input image affect the model's output. Areas that significantly influence the prediction are highlighted.
+- **Interpretation**: The scattered red spots indicate regions that contribute to the model's decision. While the overall image appears more uniform, the presence of these highlighted areas suggests that specific features in the image are strongly associated with the presence of a pituitary tumor. The lack of significant highlights elsewhere supports the model's confidence in its prediction.
+
+### Summary
+Both visualizations support the model's prediction of a pituitary tumor. The attention heatmap shows focused areas of interest, while the saliency heatmap indicates which parts of the image are most influential in making that prediction. The model's high confidence (1.000) reinforces the likelihood of a pituitary tumor being present based on the analyzed images.
+
+**Note**: This analysis is for research purposes and should not be considered a clinical diagnosis. Always consult a medical professional for accurate diagnosis and treatment.

@@ -1,0 +1,9 @@
+mode,case,schema_compliant,predicted_class_agreement,probability_agreement,unsupported_anatomy_count,unsupported_pathology_count,unsupported_claim_list,contradiction_count,contradictions,missing_required_fact_count,missing_required_keys,hallucination_rate,schema_compliance_rate,xai_method_naming_accuracy,limitation_statement_present,pass_fail,judge
+multimodal,brisc2025_test_00001_gl_ax_t1,True,True,True,0,0,[],0,[],0,[],0.0,1.0,True,True,pass,programmatic_checks_not_llm
+multimodal,brisc2025_test_00255_me_ax_t1,True,True,True,0,0,[],0,[],0,[],0.0,1.0,True,True,pass,programmatic_checks_not_llm
+multimodal,brisc2025_test_00561_no_ax_t1,True,True,True,0,0,[],0,[],0,[],0.0,1.0,True,True,pass,programmatic_checks_not_llm
+multimodal,brisc2025_test_00701_pi_ax_t1,True,True,True,0,0,[],0,[],0,[],0.0,1.0,True,True,pass,programmatic_checks_not_llm
+structured,brisc2025_test_00001_gl_ax_t1,True,True,True,0,0,[],0,[],0,[],0.0,1.0,True,True,pass,programmatic_checks_not_llm
+structured,brisc2025_test_00255_me_ax_t1,True,True,True,0,0,[],0,[],0,[],0.0,1.0,True,True,pass,programmatic_checks_not_llm
+structured,brisc2025_test_00561_no_ax_t1,True,True,True,0,0,[],0,[],0,[],0.0,1.0,True,True,pass,programmatic_checks_not_llm
+structured,brisc2025_test_00701_pi_ax_t1,True,True,True,0,0,[],0,[],0,[],0.0,1.0,True,True,pass,programmatic_checks_not_llm

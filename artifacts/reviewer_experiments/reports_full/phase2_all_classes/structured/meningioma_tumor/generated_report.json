@@ -1,0 +1,8 @@
+{
+  "model_prediction": "meningioma_tumor",
+  "prediction_confidence": "1.00",
+  "explanation_summary": "The model classified the input as meningioma_tumor with a probability of 1.00. The explanation pipeline configured the following XAI methods: gradcam (ViT Grad-CAM on a transformer block after removing CLS and register tokens and reshaping patch tokens to a spatial grid), chefer_attribution (Chefer Transformer Attribution), integrated_gradients (positive-channel evidence from a baseline), and occlusion (signed probability changes upon regional masking). As noted in XAI evaluation frameworks, attention rollout is not class-specific and is not proof of causality. Because original MRI scans and XAI heatmap images were not included in the provided input data, no visual inspection of images or heatmaps was performed.",
+  "agreement_between_xai_methods": "Quantitative agreement metrics (Dice and IoU) were not computed because the mask was marked as MASK_UNAVAILABLE.",
+  "important_limitations": "Localization performance could not be quantitatively verified as Dice and IoU metrics were not computed (MASK_UNAVAILABLE). No original MRI images or XAI heatmap visual outputs were included for visual review. Additionally, feature attribution maps and attention rollout are not proof of causality, and attention rollout is not class-specific.",
+  "research_use_warning": "This summary is a model explanation for research purposes only and is NOT a clinical radiology report or diagnosis. It has not been evaluated by qualified clinicians."
+}

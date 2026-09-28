@@ -1,0 +1,23 @@
+Based on the analysis of the tumor images, here’s a plain language explanation of what the visualizations suggest:
+
+### Predicted Class
+- **Glioma Tumor**: The model predicts with high confidence (100%) that the tumor is a glioma. This means it strongly believes that the tumor type is glioma and not any other type.
+
+### Top Scores
+- **Glioma Tumor**: 1.000 (100% confidence)
+- **Meningioma Tumor**: 0.000 (0% confidence)
+- **No Tumor**: 0.000 (0% confidence)
+- **Pituitary Tumor**: 0.000 (0% confidence)
+
+This indicates that the model is certain about the presence of a glioma and does not see evidence for other types of tumors or the absence of a tumor.
+
+### Attention Rollout Heatmap
+- **Description**: This heatmap highlights areas of the brain that the model focused on while making its prediction. The bright spots (often in red or yellow) indicate regions that contributed most to the decision.
+- **Interpretation**: The model likely identified specific features or abnormalities in the brain that are characteristic of gliomas. These areas are where the model "looked" to make its prediction.
+
+### Gradient Saliency Heatmap
+- **Description**: This heatmap shows which parts of the image had the most influence on the model's decision, with brighter areas indicating higher importance.
+- **Interpretation**: Similar to the attention heatmap, this visualization suggests that the model found significant features in the highlighted regions that are consistent with glioma tumors. The red area indicates where the model detected the strongest signals related to the tumor.
+
+### Summary
+Both visualizations support the model's prediction of a glioma tumor by highlighting specific areas in the brain image that are likely associated with this type of tumor. The model's high confidence level suggests a strong basis for its diagnosis, but it's important to remember that this analysis is for research purposes and not a clinical diagnosis. Always consult a medical professional for an accurate diagnosis and treatment options.
